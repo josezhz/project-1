@@ -1,0 +1,22 @@
+body {
+    display: flex;
+}
+
+nav {
+    width: 200px;
+}
+
+#map, #chart {
+    height: 100vh;
+}
+
+#btn-map {
+    border-top-left-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+}
+
+#btn-chart {
+    border-top-right-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+}
+

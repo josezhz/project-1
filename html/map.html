@@ -14,13 +14,28 @@
 </head>
 
 <body>
-    <nav>
-        <div class="d-flex">
+    <nav id="nav-map">
+
+        <div class="container d-flex mt-3">
             <input type="radio" class="btn-check" name="display" id="btnMap" checked>
-            <a href="/html/map.html" id="btn-map" class="btn btn-outline-success" for="btnMap">Map</a>
+            <a href="/html/map.html" id="btn-map" class="btn btn-outline-light" for="btnMap">Map</a>
             <input type="radio" class="btn-check" name="display" id="btnChart">
-            <a href="/html/chart.html" id="btn-chart" class="btn btn-outline-success" for="btnChart">Chart</a>
+            <a href="/html/chart.html" id="btn-chart" class="btn btn-outline-light" for="btnChart">Chart</a>
         </div>
+
+        <div class="container input-group mt-3">
+            <label class="input-group-text" id="label-subject" for="select-subject">Subject:</label>
+            <select class="form-select" aria-label="Default select example" id="select-subject">
+                <option value="overall" selected>Overall</option>
+                <option value="arts_and_humanities">Arts & Humanities</option>
+                <option value="engineering_and_technology">Engineering & Technology</option>
+                <option value="life_sciences_and_medicine">Life Sciences & Medicine</option>
+                <option value="natural_sciences">Natural Sciences</option>
+                <option value="social_sciences_and_management">Social Sciences & Management</option>
+            </select>
+            <input type="button" class="btn btn-success rounded-pill" id="btnSubject" value="Search">
+        </div>
+
     </nav>
 
     <div id="map" class="container-fluid"></div>

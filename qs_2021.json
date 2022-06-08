@@ -331,7 +331,7 @@
             "Score": "78.6"
         },
         {
-            "2020": "51-100",
+            "2020": "183",
             "2021": "31",
             "Institution": "Erasmus University Rotterdam",
             "Location": "Netherlands",
@@ -408,6 +408,7 @@
             "Score": "77"
         },
         {
+            "2020": "50",
             "2021": "38",
             "Institution": "Delft University of Technology",
             "Location": "Netherlands",
@@ -429,7 +430,7 @@
             "Score": "76.5"
         },
         {
-            "2020": "",
+            "2020": "55",
             "2021": "40",
             "Institution": "Technical University of Munich",
             "Location": "Germany",
@@ -528,7 +529,7 @@
             "Score": "74.8"
         },
         {
-            "2020": "51-100",
+            "2020": "138",
             "2021": "49",
             "Institution": "RWTH Aachen University",
             "Location": "Germany",
@@ -539,7 +540,7 @@
             "Score": "74.7"
         },
         {
-            "2020": "51-100",
+            "2020": "189",
             "2021": "50",
             "Institution": "Texas A&M University",
             "Location": "United States",
@@ -552,7 +553,7 @@
     ],
     "arts_and_humanities": [
         {
-            "2020": "1  ",
+            "2020": "1",
             "2021": "1",
             "Institution": "University of Oxford",
             "Location": "United Kingdom",
@@ -563,7 +564,7 @@
             "Score": "98.6"
         },
         {
-            "2020": "2  ",
+            "2020": "2",
             "2021": "2",
             "Institution": "Harvard University",
             "Location": "United States",
@@ -574,7 +575,7 @@
             "Score": "98.5"
         },
         {
-            "2020": "3  ",
+            "2020": "3",
             "2021": "3",
             "Institution": "University of Cambridge",
             "Location": "United Kingdom",
@@ -585,7 +586,7 @@
             "Score": "97.3"
         },
         {
-            "2020": "4  ",
+            "2020": "4",
             "2021": "4",
             "Institution": "University of California, Berkeley (UCB)",
             "Location": "United States",
@@ -596,7 +597,7 @@
             "Score": "93.3"
         },
         {
-            "2020": "6  ",
+            "2020": "6",
             "2021": "5",
             "Institution": "Yale University",
             "Location": "United States",
@@ -607,7 +608,7 @@
             "Score": "93.3"
         },
         {
-            "2020": "5  ",
+            "2020": "5",
             "2021": "6",
             "Institution": "Stanford University",
             "Location": "United States",
@@ -618,7 +619,7 @@
             "Score": "92.7"
         },
         {
-            "2020": "7  ",
+            "2020": "7",
             "2021": "7",
             "Institution": "New York University (NYU)",
             "Location": "United States",
@@ -629,7 +630,7 @@
             "Score": "91.6"
         },
         {
-            "2020": "9  ",
+            "2020": "9",
             "2021": "8",
             "Institution": "Princeton University",
             "Location": "United States",
@@ -640,7 +641,7 @@
             "Score": "90.3"
         },
         {
-            "2020": "8  ",
+            "2020": "8",
             "2021": "9",
             "Institution": "University of California, Los Angeles (UCLA)",
             "Location": "United States",
@@ -651,7 +652,7 @@
             "Score": "90.2"
         },
         {
-            "2020": "10  ",
+            "2020": "10",
             "2021": "10",
             "Institution": "Columbia University",
             "Location": "United States",
@@ -662,7 +663,7 @@
             "Score": "89.6"
         },
         {
-            "2020": "11  ",
+            "2020": "11",
             "2021": "11",
             "Institution": "The University of Edinburgh",
             "Location": "United Kingdom",
@@ -673,7 +674,7 @@
             "Score": "89.1"
         },
         {
-            "2020": "12  ",
+            "2020": "12",
             "2021": "12",
             "Institution": "UCL",
             "Location": "United Kingdom",
@@ -684,7 +685,7 @@
             "Score": "87.9"
         },
         {
-            "2020": "13=",
+            "2020": "13",
             "2021": "13",
             "Institution": "Massachusetts Institute of Technology (MIT)",
             "Location": "United States",
@@ -695,7 +696,7 @@
             "Score": "87.8"
         },
         {
-            "2020": "13=",
+            "2020": "13",
             "2021": "14",
             "Institution": "University of Chicago",
             "Location": "United States",
@@ -706,7 +707,7 @@
             "Score": "87.8"
         },
         {
-            "2020": "19  ",
+            "2020": "19",
             "2021": "15",
             "Institution": "National University of Singapore (NUS)",
             "Location": "Singapore",
@@ -717,7 +718,7 @@
             "Score": "87.7"
         },
         {
-            "2020": "20  ",
+            "2020": "20",
             "2021": "16",
             "Institution": "The London School of Economics and Political Science (LSE)",
             "Location": "United Kingdom",
@@ -728,7 +729,7 @@
             "Score": "87.1"
         },
         {
-            "2020": "18  ",
+            "2020": "18",
             "2021": "17",
             "Institution": "University of Toronto",
             "Location": "Canada",
@@ -739,7 +740,7 @@
             "Score": "87"
         },
         {
-            "2020": "16=",
+            "2020": "16",
             "2021": "18",
             "Institution": "The University of Melbourne",
             "Location": "Australia",
@@ -750,7 +751,7 @@
             "Score": "85.5"
         },
         {
-            "2020": "15  ",
+            "2020": "15",
             "2021": "19",
             "Institution": "Humboldt-Universität zu Berlin",
             "Location": "Germany",
@@ -761,7 +762,7 @@
             "Score": "85.3"
         },
         {
-            "2020": "24  ",
+            "2020": "24",
             "2021": "20",
             "Institution": "University of British Columbia",
             "Location": "Canada",
@@ -772,7 +773,7 @@
             "Score": "85.1"
         },
         {
-            "2020": "16=",
+            "2020": "16",
             "2021": "21",
             "Institution": "The Australian National University",
             "Location": "Australia",
@@ -783,7 +784,7 @@
             "Score": "84.9"
         },
         {
-            "2020": "21  ",
+            "2020": "21",
             "2021": "22",
             "Institution": "The University of Tokyo",
             "Location": "Japan",
@@ -794,7 +795,7 @@
             "Score": "84.7"
         },
         {
-            "2020": "22  ",
+            "2020": "22",
             "2021": "23",
             "Institution": "The University of Sydney",
             "Location": "Australia",
@@ -805,7 +806,7 @@
             "Score": "84.6"
         },
         {
-            "2020": "23  ",
+            "2020": "23",
             "2021": "24",
             "Institution": "Freie Universitaet Berlin",
             "Location": "Germany",
@@ -816,7 +817,7 @@
             "Score": "84.5"
         },
         {
-            "2020": "26  ",
+            "2020": "26",
             "2021": "25",
             "Institution": "Universidad Nacional Autónoma de México  (UNAM)",
             "Location": "Mexico",
@@ -827,7 +828,7 @@
             "Score": "84.5"
         },
         {
-            "2020": "29  ",
+            "2020": "29",
             "2021": "26",
             "Institution": "University of Amsterdam",
             "Location": "Netherlands",
@@ -838,7 +839,7 @@
             "Score": "84.2"
         },
         {
-            "2020": "28  ",
+            "2020": "28",
             "2021": "27",
             "Institution": "Cornell University",
             "Location": "United States",
@@ -849,7 +850,7 @@
             "Score": "84.1"
         },
         {
-            "2020": "27  ",
+            "2020": "27",
             "2021": "28",
             "Institution": "The University of Hong Kong",
             "Location": "Hong Kong",
@@ -860,7 +861,7 @@
             "Score": "84.1"
         },
         {
-            "2020": "31  ",
+            "2020": "31",
             "2021": "29",
             "Institution": "University of Michigan-Ann Arbor",
             "Location": "United States",
@@ -871,7 +872,7 @@
             "Score": "83.9"
         },
         {
-            "2020": "25  ",
+            "2020": "25",
             "2021": "30",
             "Institution": "King's College London",
             "Location": "United Kingdom",
@@ -882,7 +883,7 @@
             "Score": "83.4"
         },
         {
-            "2020": "32=",
+            "2020": "32",
             "2021": "31",
             "Institution": "Université Paris 1 Panthéon-Sorbonne",
             "Location": "France",
@@ -893,7 +894,7 @@
             "Score": "83.1"
         },
         {
-            "2020": "32=",
+            "2020": "32",
             "2021": "32",
             "Institution": "University of Pennsylvania",
             "Location": "United States",
@@ -904,7 +905,7 @@
             "Score": "83.1"
         },
         {
-            "2020": "30  ",
+            "2020": "30",
             "2021": "33",
             "Institution": "McGill University",
             "Location": "Canada",
@@ -915,7 +916,7 @@
             "Score": "82"
         },
         {
-            "2020": "52  ",
+            "2020": "52",
             "2021": "34",
             "Institution": "Sorbonne University",
             "Location": "France",
@@ -926,7 +927,7 @@
             "Score": "81.6"
         },
         {
-            "2020": "32=",
+            "2020": "32",
             "2021": "35",
             "Institution": "Leiden University",
             "Location": "Netherlands",
@@ -937,7 +938,7 @@
             "Score": "81.4"
         },
         {
-            "2020": "38  ",
+            "2020": "38",
             "2021": "36",
             "Institution": "Peking University",
             "Location": "China",
@@ -948,7 +949,7 @@
             "Score": "81.3"
         },
         {
-            "2020": "37  ",
+            "2020": "37",
             "2021": "37",
             "Institution": "University of Texas at Austin",
             "Location": "United States",
@@ -959,7 +960,7 @@
             "Score": "81.3"
         },
         {
-            "2020": "36  ",
+            "2020": "36",
             "2021": "38",
             "Institution": "Seoul National University",
             "Location": "South Korea",
@@ -970,7 +971,7 @@
             "Score": "81.2"
         },
         {
-            "2020": "35  ",
+            "2020": "35",
             "2021": "39",
             "Institution": "Universidad de Buenos Aires (UBA)",
             "Location": "Argentina",
@@ -981,7 +982,7 @@
             "Score": "81"
         },
         {
-            "2020": "44  ",
+            "2020": "44",
             "2021": "40",
             "Institution": "Duke University",
             "Location": "United States",
@@ -992,7 +993,7 @@
             "Score": "80.9"
         },
         {
-            "2020": "61  ",
+            "2020": "61",
             "2021": "41",
             "Institution": "Nanyang Technological University, Singapore (NTU)",
             "Location": "Singapore",
@@ -1003,7 +1004,7 @@
             "Score": "80.8"
         },
         {
-            "2020": "45  ",
+            "2020": "45",
             "2021": "42",
             "Institution": "University of St Andrews",
             "Location": "United Kingdom",
@@ -1014,7 +1015,7 @@
             "Score": "80.7"
         },
         {
-            "2020": "39=",
+            "2020": "39",
             "2021": "43",
             "Institution": "The Chinese University of Hong Kong (CUHK)",
             "Location": "Hong Kong",
@@ -1025,7 +1026,7 @@
             "Score": "80.4"
         },
         {
-            "2020": "49=",
+            "2020": "49",
             "2021": "44",
             "Institution": "SOAS University of London",
             "Location": "United Kingdom",
@@ -1036,7 +1037,7 @@
             "Score": "80"
         },
         {
-            "2020": "39=",
+            "2020": "39",
             "2021": "45",
             "Institution": "Durham University",
             "Location": "United Kingdom",
@@ -1047,7 +1048,7 @@
             "Score": "79.8"
         },
         {
-            "2020": "39=",
+            "2020": "39",
             "2021": "46",
             "Institution": "The University of Manchester",
             "Location": "United Kingdom",
@@ -1058,7 +1059,7 @@
             "Score": "79.8"
         },
         {
-            "2020": "56  ",
+            "2020": "56",
             "2021": "47",
             "Institution": "Tsinghua University",
             "Location": "China",
@@ -1069,7 +1070,7 @@
             "Score": "79.6"
         },
         {
-            "2020": "58=",
+            "2020": "58",
             "2021": "48",
             "Institution": "University of Vienna",
             "Location": "Austria",
@@ -1080,7 +1081,7 @@
             "Score": "79.6"
         },
         {
-            "2020": "46  ",
+            "2020": "46",
             "2021": "49",
             "Institution": "Brown University",
             "Location": "United States",
@@ -1091,7 +1092,7 @@
             "Score": "79.2"
         },
         {
-            "2020": "49=",
+            "2020": "49",
             "2021": "50",
             "Institution": "Ludwig-Maximilians-Universität München",
             "Location": "Germany",
@@ -1115,7 +1116,7 @@
             "Score": "97.3"
         },
         {
-            "2020": "2  ",
+            "2020": "2",
             "2021": "2",
             "Institution": "Stanford University",
             "Location": "United States",
@@ -1126,7 +1127,7 @@
             "Score": "96"
         },
         {
-            "2020": "3  ",
+            "2020": "3",
             "2021": "3",
             "Institution": "University of Cambridge",
             "Location": "United Kingdom",
@@ -1137,7 +1138,7 @@
             "Score": "93.4"
         },
         {
-            "2020": "4  ",
+            "2020": "4",
             "2021": "4",
             "Institution": "ETH Zurich - Swiss Federal Institute of Technology",
             "Location": "Switzerland",
@@ -1148,7 +1149,7 @@
             "Score": "93.2"
         },
         {
-            "2020": "8  ",
+            "2020": "8",
             "2021": "5",
             "Institution": "Nanyang Technological University, Singapore (NTU)",
             "Location": "Singapore",
@@ -1159,7 +1160,7 @@
             "Score": "93.2"
         },
         {
-            "2020": "6  ",
+            "2020": "6",
             "2021": "6",
             "Institution": "University of Oxford",
             "Location": "United Kingdom",
@@ -1170,7 +1171,7 @@
             "Score": "92.5"
         },
         {
-            "2020": "5  ",
+            "2020": "5",
             "2021": "7",
             "Institution": "University of California, Berkeley (UCB)",
             "Location": "United States",
@@ -1181,7 +1182,7 @@
             "Score": "92.4"
         },
         {
-            "2020": "7  ",
+            "2020": "7",
             "2021": "8",
             "Institution": "Imperial College London",
             "Location": "United Kingdom",
@@ -1192,7 +1193,7 @@
             "Score": "92.1"
         },
         {
-            "2020": "10  ",
+            "2020": "10",
             "2021": "9",
             "Institution": "National University of Singapore (NUS)",
             "Location": "Singapore",
@@ -1203,7 +1204,7 @@
             "Score": "91.9"
         },
         {
-            "2020": "9  ",
+            "2020": "9",
             "2021": "10",
             "Institution": "Tsinghua University",
             "Location": "China",
@@ -1214,7 +1215,7 @@
             "Score": "91.5"
         },
         {
-            "2020": "12  ",
+            "2020": "12",
             "2021": "11",
             "Institution": "Harvard University",
             "Location": "United States",
@@ -1225,7 +1226,7 @@
             "Score": "90.6"
         },
         {
-            "2020": "11  ",
+            "2020": "11",
             "2021": "12",
             "Institution": "EPFL",
             "Location": "Switzerland",
@@ -1236,7 +1237,7 @@
             "Score": "90.5"
         },
         {
-            "2020": "13  ",
+            "2020": "13",
             "2021": "13",
             "Institution": "Georgia Institute of Technology",
             "Location": "United States",
@@ -1247,7 +1248,7 @@
             "Score": "89.2"
         },
         {
-            "2020": "14  ",
+            "2020": "14",
             "2021": "14",
             "Institution": "California Institute of Technology (Caltech)",
             "Location": "United States",
@@ -1258,7 +1259,7 @@
             "Score": "89"
         },
         {
-            "2020": "15  ",
+            "2020": "15",
             "2021": "15",
             "Institution": "Delft University of Technology",
             "Location": "Netherlands",
@@ -1269,7 +1270,7 @@
             "Score": "87.7"
         },
         {
-            "2020": "16  ",
+            "2020": "16",
             "2021": "16",
             "Institution": "KAIST - Korea Advanced Institute of Science & Technology",
             "Location": "South Korea",
@@ -1280,7 +1281,7 @@
             "Score": "87"
         },
         {
-            "2020": "17  ",
+            "2020": "17",
             "2021": "17",
             "Institution": "Carnegie Mellon University",
             "Location": "United States",
@@ -1291,7 +1292,7 @@
             "Score": "86.7"
         },
         {
-            "2020": "22=",
+            "2020": "22",
             "2021": "18",
             "Institution": "University of Toronto",
             "Location": "Canada",
@@ -1302,7 +1303,7 @@
             "Score": "85.8"
         },
         {
-            "2020": "19  ",
+            "2020": "19",
             "2021": "19",
             "Institution": "University of California, Los Angeles (UCLA)",
             "Location": "United States",
@@ -1313,7 +1314,7 @@
             "Score": "85.7"
         },
         {
-            "2020": "20  ",
+            "2020": "20",
             "2021": "20",
             "Institution": "Politecnico di Milano",
             "Location": "Italy",
@@ -1324,7 +1325,7 @@
             "Score": "85.3"
         },
         {
-            "2020": "18  ",
+            "2020": "18",
             "2021": "21",
             "Institution": "The Hong Kong University of Science and Technology",
             "Location": "Hong Kong",
@@ -1335,7 +1336,7 @@
             "Score": "85.3"
         },
         {
-            "2020": "21  ",
+            "2020": "21",
             "2021": "22",
             "Institution": "The University of Tokyo",
             "Location": "Japan",
@@ -1346,7 +1347,7 @@
             "Score": "85.3"
         },
         {
-            "2020": "26  ",
+            "2020": "26",
             "2021": "23",
             "Institution": "Shanghai Jiao Tong University",
             "Location": "China",
@@ -1357,7 +1358,7 @@
             "Score": "85"
         },
         {
-            "2020": "22=",
+            "2020": "22",
             "2021": "24",
             "Institution": "Peking University",
             "Location": "China",
@@ -1368,7 +1369,7 @@
             "Score": "84.7"
         },
         {
-            "2020": "28=",
+            "2020": "28",
             "2021": "25",
             "Institution": "University of Texas at Austin",
             "Location": "United States",
@@ -1379,7 +1380,7 @@
             "Score": "84.4"
         },
         {
-            "2020": "27  ",
+            "2020": "27",
             "2021": "26",
             "Institution": "University of Illinois at Urbana-Champaign",
             "Location": "United States",
@@ -1390,7 +1391,7 @@
             "Score": "84.1"
         },
         {
-            "2020": "22=",
+            "2020": "22",
             "2021": "27",
             "Institution": "Seoul National University",
             "Location": "South Korea",
@@ -1401,7 +1402,7 @@
             "Score": "83.9"
         },
         {
-            "2020": "32=",
+            "2020": "32",
             "2021": "28",
             "Institution": "Zhejiang University",
             "Location": "China",
@@ -1412,7 +1413,7 @@
             "Score": "83.9"
         },
         {
-            "2020": "25  ",
+            "2020": "25",
             "2021": "29",
             "Institution": "Technical University of Munich",
             "Location": "Germany",
@@ -1423,7 +1424,7 @@
             "Score": "83.7"
         },
         {
-            "2020": "31  ",
+            "2020": "31",
             "2021": "30",
             "Institution": "Princeton University",
             "Location": "United States",
@@ -1434,7 +1435,7 @@
             "Score": "83.6"
         },
         {
-            "2020": "30  ",
+            "2020": "30",
             "2021": "31",
             "Institution": "KTH Royal Institute of Technology",
             "Location": "Sweden",
@@ -1445,7 +1446,7 @@
             "Score": "83.5"
         },
         {
-            "2020": "32=",
+            "2020": "32",
             "2021": "32",
             "Institution": "University of British Columbia",
             "Location": "Canada",
@@ -1456,7 +1457,7 @@
             "Score": "83.3"
         },
         {
-            "2020": "36  ",
+            "2020": "36",
             "2021": "33",
             "Institution": "University of Michigan-Ann Arbor",
             "Location": "United States",
@@ -1467,7 +1468,7 @@
             "Score": "83.2"
         },
         {
-            "2020": "32=",
+            "2020": "32",
             "2021": "34",
             "Institution": "Purdue University",
             "Location": "United States",
@@ -1478,7 +1479,7 @@
             "Score": "82.6"
         },
         {
-            "2020": "28=",
+            "2020": "28",
             "2021": "35",
             "Institution": "Tokyo Institute of Technology (Tokyo Tech)",
             "Location": "Japan",
@@ -1489,7 +1490,7 @@
             "Score": "82.6"
         },
         {
-            "2020": "32=",
+            "2020": "32",
             "2021": "36",
             "Institution": "Cornell University",
             "Location": "United States",
@@ -1500,7 +1501,7 @@
             "Score": "81.9"
         },
         {
-            "2020": "37  ",
+            "2020": "37",
             "2021": "37",
             "Institution": "The University of New South Wales (UNSW Sydney)",
             "Location": "Australia",
@@ -1511,7 +1512,7 @@
             "Score": "81.9"
         },
         {
-            "2020": "41=",
+            "2020": "41",
             "2021": "38",
             "Institution": "University of Waterloo",
             "Location": "Canada",
@@ -1522,7 +1523,7 @@
             "Score": "81.2"
         },
         {
-            "2020": "47=",
+            "2020": "47",
             "2021": "39",
             "Institution": "Politecnico di Torino",
             "Location": "Italy",
@@ -1533,7 +1534,7 @@
             "Score": "81"
         },
         {
-            "2020": "47=",
+            "2020": "47",
             "2021": "40",
             "Institution": "McGill University",
             "Location": "Canada",
@@ -1544,7 +1545,7 @@
             "Score": "80.6"
         },
         {
-            "2020": "41=",
+            "2020": "41",
             "2021": "41",
             "Institution": "National Taiwan University (NTU)",
             "Location": "Taiwan",
@@ -1555,7 +1556,7 @@
             "Score": "80.6"
         },
         {
-            "2020": "39=",
+            "2020": "39",
             "2021": "42",
             "Institution": "The University of Hong Kong",
             "Location": "Hong Kong",
@@ -1566,7 +1567,7 @@
             "Score": "80.6"
         },
         {
-            "2020": "50  ",
+            "2020": "50",
             "2021": "43",
             "Institution": "Fudan University",
             "Location": "China",
@@ -1577,7 +1578,7 @@
             "Score": "80.5"
         },
         {
-            "2020": "51=",
+            "2020": "51",
             "2021": "44",
             "Institution": "RWTH Aachen University",
             "Location": "Germany",
@@ -1588,7 +1589,7 @@
             "Score": "80.5"
         },
         {
-            "2020": "45=",
+            "2020": "45",
             "2021": "45",
             "Institution": "The University of Manchester",
             "Location": "United Kingdom",
@@ -1599,7 +1600,7 @@
             "Score": "80.5"
         },
         {
-            "2020": "70  ",
+            "2020": "70",
             "2021": "46",
             "Institution": "Yale University",
             "Location": "United States",
@@ -1610,7 +1611,7 @@
             "Score": "80.5"
         },
         {
-            "2020": "51=",
+            "2020": "51",
             "2021": "47",
             "Institution": "Columbia University",
             "Location": "United States",
@@ -1621,7 +1622,7 @@
             "Score": "80.2"
         },
         {
-            "2020": "39=",
+            "2020": "39",
             "2021": "48",
             "Institution": "UCL",
             "Location": "United Kingdom",
@@ -1632,7 +1633,7 @@
             "Score": "80.1"
         },
         {
-            "2020": "44  ",
+            "2020": "44",
             "2021": "49",
             "Institution": "Indian Institute of Technology Bombay (IITB)",
             "Location": "India",
@@ -1643,7 +1644,7 @@
             "Score": "79.9"
         },
         {
-            "2020": "68=",
+            "2020": "68",
             "2021": "50",
             "Institution": "Eindhoven University of Technology",
             "Location": "Netherlands",
@@ -1656,7 +1657,7 @@
     ],
     "life_sciences_and_medicine": [
         {
-            "2020": "1  ",
+            "2020": "1",
             "2021": "1",
             "Institution": "Harvard University",
             "Location": "United States",
@@ -1667,7 +1668,7 @@
             "Score": "98.6"
         },
         {
-            "2020": "2  ",
+            "2020": "2",
             "2021": "2",
             "Institution": "University of Oxford",
             "Location": "United Kingdom",
@@ -1678,7 +1679,7 @@
             "Score": "94.7"
         },
         {
-            "2020": "4  ",
+            "2020": "4",
             "2021": "3",
             "Institution": "Stanford University",
             "Location": "United States",
@@ -1689,7 +1690,7 @@
             "Score": "94.4"
         },
         {
-            "2020": "3  ",
+            "2020": "3",
             "2021": "4",
             "Institution": "University of Cambridge",
             "Location": "United Kingdom",
@@ -1700,7 +1701,7 @@
             "Score": "93.5"
         },
         {
-            "2020": "5  ",
+            "2020": "5",
             "2021": "5",
             "Institution": "Johns Hopkins University",
             "Location": "United States",
@@ -1711,7 +1712,7 @@
             "Score": "93.3"
         },
         {
-            "2020": "6  ",
+            "2020": "6",
             "2021": "6",
             "Institution": "Massachusetts Institute of Technology (MIT)",
             "Location": "United States",
@@ -1722,7 +1723,7 @@
             "Score": "92.9"
         },
         {
-            "2020": "7  ",
+            "2020": "7",
             "2021": "7",
             "Institution": "University of California, San Francisco",
             "Location": "United States",
@@ -1733,7 +1734,7 @@
             "Score": "91.1"
         },
         {
-            "2020": "10  ",
+            "2020": "10",
             "2021": "8",
             "Institution": "Karolinska Institutet",
             "Location": "Sweden",
@@ -1744,7 +1745,7 @@
             "Score": "90.5"
         },
         {
-            "2020": "8=",
+            "2020": "8",
             "2021": "9",
             "Institution": "University of California, Los Angeles (UCLA)",
             "Location": "United States",
@@ -1755,7 +1756,7 @@
             "Score": "90.5"
         },
         {
-            "2020": "8=",
+            "2020": "8",
             "2021": "10",
             "Institution": "UCL",
             "Location": "United Kingdom",
@@ -1766,7 +1767,7 @@
             "Score": "90.2"
         },
         {
-            "2020": "12  ",
+            "2020": "12",
             "2021": "11",
             "Institution": "Yale University",
             "Location": "United States",
@@ -1777,7 +1778,7 @@
             "Score": "89.8"
         },
         {
-            "2020": "11  ",
+            "2020": "11",
             "2021": "12",
             "Institution": "Imperial College London",
             "Location": "United Kingdom",
@@ -1788,7 +1789,7 @@
             "Score": "89.6"
         },
         {
-            "2020": "13  ",
+            "2020": "13",
             "2021": "13",
             "Institution": "University of Toronto",
             "Location": "Canada",
@@ -1799,7 +1800,7 @@
             "Score": "89.1"
         },
         {
-            "2020": "15=",
+            "2020": "15",
             "2021": "14",
             "Institution": "University of Pennsylvania",
             "Location": "United States",
@@ -1810,7 +1811,7 @@
             "Score": "87.5"
         },
         {
-            "2020": "17  ",
+            "2020": "17",
             "2021": "15",
             "Institution": "University of Washington",
             "Location": "United States",
@@ -1821,7 +1822,7 @@
             "Score": "87.2"
         },
         {
-            "2020": "19  ",
+            "2020": "19",
             "2021": "16",
             "Institution": "Columbia University",
             "Location": "United States",
@@ -1832,7 +1833,7 @@
             "Score": "86.8"
         },
         {
-            "2020": "30=",
+            "2020": "30",
             "2021": "17",
             "Institution": "Duke University",
             "Location": "United States",
@@ -1843,7 +1844,7 @@
             "Score": "86.8"
         },
         {
-            "2020": "14  ",
+            "2020": "14",
             "2021": "18",
             "Institution": "University of California, San Diego (UCSD)",
             "Location": "United States",
@@ -1854,7 +1855,7 @@
             "Score": "86.8"
         },
         {
-            "2020": "18  ",
+            "2020": "18",
             "2021": "19",
             "Institution": "University of Copenhagen",
             "Location": "Denmark",
@@ -1865,7 +1866,7 @@
             "Score": "86.1"
         },
         {
-            "2020": "22=",
+            "2020": "22",
             "2021": "20",
             "Institution": "Cornell University",
             "Location": "United States",
@@ -1876,7 +1877,7 @@
             "Score": "86"
         },
         {
-            "2020": "15=",
+            "2020": "15",
             "2021": "21",
             "Institution": "University of California, Berkeley (UCB)",
             "Location": "United States",
@@ -1887,7 +1888,7 @@
             "Score": "86"
         },
         {
-            "2020": "24  ",
+            "2020": "24",
             "2021": "22",
             "Institution": "The University of Sydney",
             "Location": "Australia",
@@ -1898,7 +1899,7 @@
             "Score": "85.9"
         },
         {
-            "2020": "20=",
+            "2020": "20",
             "2021": "23",
             "Institution": "King's College London",
             "Location": "United Kingdom",
@@ -1909,7 +1910,7 @@
             "Score": "85.7"
         },
         {
-            "2020": "20=",
+            "2020": "20",
             "2021": "24",
             "Institution": "The University of Edinburgh",
             "Location": "United Kingdom",
@@ -1920,7 +1921,7 @@
             "Score": "85.6"
         },
         {
-            "2020": "22=",
+            "2020": "22",
             "2021": "25",
             "Institution": "The University of Melbourne",
             "Location": "Australia",
@@ -1931,7 +1932,7 @@
             "Score": "85.2"
         },
         {
-            "2020": "25=",
+            "2020": "25",
             "2021": "26",
             "Institution": "University of Michigan-Ann Arbor",
             "Location": "United States",
@@ -1942,7 +1943,7 @@
             "Score": "85"
         },
         {
-            "2020": "25=",
+            "2020": "25",
             "2021": "27",
             "Institution": "National University of Singapore (NUS)",
             "Location": "Singapore",
@@ -1953,7 +1954,7 @@
             "Score": "84.7"
         },
         {
-            "2020": "32  ",
+            "2020": "32",
             "2021": "28",
             "Institution": "Seoul National University",
             "Location": "South Korea",
@@ -1964,7 +1965,7 @@
             "Score": "84.4"
         },
         {
-            "2020": "28=",
+            "2020": "28",
             "2021": "29",
             "Institution": "University of British Columbia",
             "Location": "Canada",
@@ -1975,7 +1976,7 @@
             "Score": "83.8"
         },
         {
-            "2020": "28=",
+            "2020": "28",
             "2021": "30",
             "Institution": "Washington University in St. Louis",
             "Location": "United States",
@@ -1986,7 +1987,7 @@
             "Score": "83.5"
         },
         {
-            "2020": "27  ",
+            "2020": "27",
             "2021": "31",
             "Institution": "McGill University",
             "Location": "Canada",
@@ -1997,7 +1998,7 @@
             "Score": "83.3"
         },
         {
-            "2020": "33=",
+            "2020": "33",
             "2021": "32",
             "Institution": "University of North Carolina, Chapel Hill",
             "Location": "United States",
@@ -2008,7 +2009,7 @@
             "Score": "83.2"
         },
         {
-            "2020": "30=",
+            "2020": "30",
             "2021": "33",
             "Institution": "The University of Tokyo",
             "Location": "Japan",
@@ -2019,7 +2020,7 @@
             "Score": "82.9"
         },
         {
-            "2020": "33=",
+            "2020": "33",
             "2021": "34",
             "Institution": "Ruprecht-Karls-Universität Heidelberg",
             "Location": "Germany",
@@ -2030,7 +2031,7 @@
             "Score": "82.8"
         },
         {
-            "2020": "39  ",
+            "2020": "39",
             "2021": "35",
             "Institution": "Monash University",
             "Location": "Australia",
@@ -2041,7 +2042,7 @@
             "Score": "82"
         },
         {
-            "2020": "40  ",
+            "2020": "40",
             "2021": "36",
             "Institution": "New York University (NYU)",
             "Location": "United States",
@@ -2052,7 +2053,7 @@
             "Score": "81.9"
         },
         {
-            "2020": "33=",
+            "2020": "33",
             "2021": "37",
             "Institution": "University of Amsterdam",
             "Location": "Netherlands",
@@ -2063,7 +2064,7 @@
             "Score": "81.9"
         },
         {
-            "2020": "37  ",
+            "2020": "37",
             "2021": "38",
             "Institution": "The University of Queensland",
             "Location": "Australia",
@@ -2074,7 +2075,7 @@
             "Score": "81.6"
         },
         {
-            "2020": "38  ",
+            "2020": "38",
             "2021": "39",
             "Institution": "University of Chicago",
             "Location": "United States",
@@ -2085,7 +2086,7 @@
             "Score": "81.6"
         },
         {
-            "2020": "33=",
+            "2020": "33",
             "2021": "40",
             "Institution": "Ludwig-Maximilians-Universität München",
             "Location": "Germany",
@@ -2096,7 +2097,7 @@
             "Score": "81"
         },
         {
-            "2020": "42  ",
+            "2020": "42",
             "2021": "41",
             "Institution": "Utrecht University",
             "Location": "Netherlands",
@@ -2107,7 +2108,7 @@
             "Score": "81"
         },
         {
-            "2020": "41  ",
+            "2020": "41",
             "2021": "42",
             "Institution": "The University of Manchester",
             "Location": "United Kingdom",
@@ -2118,7 +2119,7 @@
             "Score": "80.9"
         },
         {
-            "2020": "43  ",
+            "2020": "43",
             "2021": "43",
             "Institution": "University of Zurich",
             "Location": "Switzerland",
@@ -2129,7 +2130,7 @@
             "Score": "80.9"
         },
         {
-            "2020": "51  ",
+            "2020": "51",
             "2021": "44",
             "Institution": "London School of Hygiene and Tropical Medicine",
             "Location": "United Kingdom",
@@ -2140,7 +2141,7 @@
             "Score": "80.8"
         },
         {
-            "2020": "47  ",
+            "2020": "47",
             "2021": "45",
             "Institution": "Boston University",
             "Location": "United States",
@@ -2151,7 +2152,7 @@
             "Score": "80.7"
         },
         {
-            "2020": "45=",
+            "2020": "45",
             "2021": "46",
             "Institution": "Sorbonne University",
             "Location": "France",
@@ -2162,7 +2163,7 @@
             "Score": "80.6"
         },
         {
-            "2020": "45=",
+            "2020": "45",
             "2021": "47",
             "Institution": "University of California, Davis",
             "Location": "United States",
@@ -2173,7 +2174,7 @@
             "Score": "80.6"
         },
         {
-            "2020": "48  ",
+            "2020": "48",
             "2021": "48",
             "Institution": "University of Pittsburgh",
             "Location": "United States",
@@ -2184,7 +2185,7 @@
             "Score": "80.4"
         },
         {
-            "2020": "54=",
+            "2020": "54",
             "2021": "49",
             "Institution": "Erasmus University Rotterdam",
             "Location": "Netherlands",
@@ -2195,7 +2196,7 @@
             "Score": "80.3"
         },
         {
-            "2020": "49  ",
+            "2020": "49",
             "2021": "50",
             "Institution": "University of Glasgow",
             "Location": "United Kingdom",
@@ -2208,7 +2209,7 @@
     ],
     "natural_sciences": [
         {
-            "2020": "1  ",
+            "2020": "1",
             "2021": "1",
             "Institution": "Massachusetts Institute of Technology (MIT)",
             "Location": "United States",
@@ -2219,7 +2220,7 @@
             "Score": "97.5"
         },
         {
-            "2020": "2=",
+            "2020": "2",
             "2021": "2",
             "Institution": "Stanford University",
             "Location": "United States",
@@ -2230,7 +2231,7 @@
             "Score": "97.3"
         },
         {
-            "2020": "2=",
+            "2020": "2",
             "2021": "3",
             "Institution": "Harvard University",
             "Location": "United States",
@@ -2241,7 +2242,7 @@
             "Score": "97"
         },
         {
-            "2020": "4  ",
+            "2020": "4",
             "2021": "4",
             "Institution": "University of Cambridge",
             "Location": "United Kingdom",
@@ -2252,7 +2253,7 @@
             "Score": "96.7"
         },
         {
-            "2020": "5  ",
+            "2020": "5",
             "2021": "5",
             "Institution": "University of Oxford",
             "Location": "United Kingdom",
@@ -2263,7 +2264,7 @@
             "Score": "95.4"
         },
         {
-            "2020": "6=",
+            "2020": "6",
             "2021": "6",
             "Institution": "ETH Zurich - Swiss Federal Institute of Technology",
             "Location": "Switzerland",
@@ -2274,7 +2275,7 @@
             "Score": "95.1"
         },
         {
-            "2020": "6=",
+            "2020": "6",
             "2021": "7",
             "Institution": "California Institute of Technology (Caltech)",
             "Location": "United States",
@@ -2285,7 +2286,7 @@
             "Score": "94.9"
         },
         {
-            "2020": "6=",
+            "2020": "6",
             "2021": "8",
             "Institution": "University of California, Berkeley (UCB)",
             "Location": "United States",
@@ -2296,7 +2297,7 @@
             "Score": "94.4"
         },
         {
-            "2020": "9  ",
+            "2020": "9",
             "2021": "9",
             "Institution": "Imperial College London",
             "Location": "United Kingdom",
@@ -2307,7 +2308,7 @@
             "Score": "91.7"
         },
         {
-            "2020": "10  ",
+            "2020": "10",
             "2021": "10",
             "Institution": "Princeton University",
             "Location": "United States",
@@ -2318,7 +2319,7 @@
             "Score": "91.6"
         },
         {
-            "2020": "11  ",
+            "2020": "11",
             "2021": "11",
             "Institution": "EPFL",
             "Location": "Switzerland",
@@ -2329,7 +2330,7 @@
             "Score": "90.1"
         },
         {
-            "2020": "14  ",
+            "2020": "14",
             "2021": "12",
             "Institution": "National University of Singapore (NUS)",
             "Location": "Singapore",
@@ -2340,7 +2341,7 @@
             "Score": "90"
         },
         {
-            "2020": "13  ",
+            "2020": "13",
             "2021": "13",
             "Institution": "The University of Tokyo",
             "Location": "Japan",
@@ -2351,7 +2352,7 @@
             "Score": "89.8"
         },
         {
-            "2020": "19  ",
+            "2020": "19",
             "2021": "14",
             "Institution": "Nanyang Technological University, Singapore (NTU)",
             "Location": "Singapore",
@@ -2362,7 +2363,7 @@
             "Score": "89.5"
         },
         {
-            "2020": "16  ",
+            "2020": "16",
             "2021": "15",
             "Institution": "Tsinghua University",
             "Location": "China",
@@ -2373,7 +2374,7 @@
             "Score": "89.1"
         },
         {
-            "2020": "15  ",
+            "2020": "15",
             "2021": "16",
             "Institution": "University of California, Los Angeles (UCLA)",
             "Location": "United States",
@@ -2384,7 +2385,7 @@
             "Score": "89.1"
         },
         {
-            "2020": "17  ",
+            "2020": "17",
             "2021": "17",
             "Institution": "Peking University",
             "Location": "China",
@@ -2395,7 +2396,7 @@
             "Score": "88.4"
         },
         {
-            "2020": "12  ",
+            "2020": "12",
             "2021": "18",
             "Institution": "University of Chicago",
             "Location": "United States",
@@ -2406,7 +2407,7 @@
             "Score": "87.7"
         },
         {
-            "2020": "18  ",
+            "2020": "18",
             "2021": "19",
             "Institution": "University of Toronto",
             "Location": "Canada",
@@ -2417,7 +2418,7 @@
             "Score": "87.7"
         },
         {
-            "2020": "20  ",
+            "2020": "20",
             "2021": "20",
             "Institution": "Yale University",
             "Location": "United States",
@@ -2428,7 +2429,7 @@
             "Score": "87.4"
         },
         {
-            "2020": "21  ",
+            "2020": "21",
             "2021": "21",
             "Institution": "Lomonosov Moscow State University",
             "Location": "Russia",
@@ -2439,7 +2440,7 @@
             "Score": "86.7"
         },
         {
-            "2020": "31  ",
+            "2020": "31",
             "2021": "22",
             "Institution": "Sorbonne University",
             "Location": "France",
@@ -2450,7 +2451,7 @@
             "Score": "85.9"
         },
         {
-            "2020": "23  ",
+            "2020": "23",
             "2021": "23",
             "Institution": "Columbia University",
             "Location": "United States",
@@ -2461,7 +2462,7 @@
             "Score": "85.6"
         },
         {
-            "2020": "25  ",
+            "2020": "25",
             "2021": "24",
             "Institution": "University of British Columbia",
             "Location": "Canada",
@@ -2472,7 +2473,7 @@
             "Score": "85.6"
         },
         {
-            "2020": "24  ",
+            "2020": "24",
             "2021": "25",
             "Institution": "Cornell University",
             "Location": "United States",
@@ -2483,7 +2484,7 @@
             "Score": "85.5"
         },
         {
-            "2020": "26=",
+            "2020": "26",
             "2021": "26",
             "Institution": "Ecole Polytechnique",
             "Location": "France",
@@ -2494,7 +2495,7 @@
             "Score": "85"
         },
         {
-            "2020": "22  ",
+            "2020": "22",
             "2021": "27",
             "Institution": "Kyoto University",
             "Location": "Japan",
@@ -2505,7 +2506,7 @@
             "Score": "84.8"
         },
         {
-            "2020": "26=",
+            "2020": "26",
             "2021": "28",
             "Institution": "Université PSL",
             "Location": "France",
@@ -2516,7 +2517,7 @@
             "Score": "84.6"
         },
         {
-            "2020": "30  ",
+            "2020": "30",
             "2021": "29",
             "Institution": "University of Illinois at Urbana-Champaign",
             "Location": "United States",
@@ -2527,7 +2528,7 @@
             "Score": "84.5"
         },
         {
-            "2020": "33  ",
+            "2020": "33",
             "2021": "30",
             "Institution": "University of Texas at Austin",
             "Location": "United States",
@@ -2538,7 +2539,7 @@
             "Score": "84.5"
         },
         {
-            "2020": "28  ",
+            "2020": "28",
             "2021": "31",
             "Institution": "Technical University of Munich",
             "Location": "Germany",
@@ -2549,7 +2550,7 @@
             "Score": "84"
         },
         {
-            "2020": "29  ",
+            "2020": "29",
             "2021": "32",
             "Institution": "Seoul National University",
             "Location": "South Korea",
@@ -2560,7 +2561,7 @@
             "Score": "83.9"
         },
         {
-            "2020": "34  ",
+            "2020": "34",
             "2021": "33",
             "Institution": "University of California, Santa Barbara (UCSB)",
             "Location": "United States",
@@ -2571,7 +2572,7 @@
             "Score": "83.8"
         },
         {
-            "2020": "40=",
+            "2020": "40",
             "2021": "34",
             "Institution": "University of California, San Diego (UCSD)",
             "Location": "United States",
@@ -2582,7 +2583,7 @@
             "Score": "83.4"
         },
         {
-            "2020": "42=",
+            "2020": "42",
             "2021": "35",
             "Institution": "University of Michigan-Ann Arbor",
             "Location": "United States",
@@ -2593,7 +2594,7 @@
             "Score": "83.4"
         },
         {
-            "2020": "45  ",
+            "2020": "45",
             "2021": "36",
             "Institution": "University of Washington",
             "Location": "United States",
@@ -2604,7 +2605,7 @@
             "Score": "83.2"
         },
         {
-            "2020": "37=",
+            "2020": "37",
             "2021": "37",
             "Institution": "The Australian National University",
             "Location": "Australia",
@@ -2615,7 +2616,7 @@
             "Score": "83"
         },
         {
-            "2020": "42=",
+            "2020": "42",
             "2021": "38",
             "Institution": "Northwestern University",
             "Location": "United States",
@@ -2626,7 +2627,7 @@
             "Score": "83"
         },
         {
-            "2020": "35  ",
+            "2020": "35",
             "2021": "39",
             "Institution": "University of Science and Technology of China",
             "Location": "China",
@@ -2637,7 +2638,7 @@
             "Score": "83"
         },
         {
-            "2020": "32  ",
+            "2020": "32",
             "2021": "40",
             "Institution": "Tokyo Institute of Technology (Tokyo Tech)",
             "Location": "Japan",
@@ -2648,7 +2649,7 @@
             "Score": "82.8"
         },
         {
-            "2020": "36  ",
+            "2020": "36",
             "2021": "41",
             "Institution": "Ludwig-Maximilians-Universität München",
             "Location": "Germany",
@@ -2659,7 +2660,7 @@
             "Score": "82.7"
         },
         {
-            "2020": "40=",
+            "2020": "40",
             "2021": "42",
             "Institution": "The Hong Kong University of Science and Technology",
             "Location": "Hong Kong",
@@ -2670,7 +2671,7 @@
             "Score": "82.6"
         },
         {
-            "2020": "39  ",
+            "2020": "39",
             "2021": "43",
             "Institution": "Fudan University",
             "Location": "China",
@@ -2681,7 +2682,7 @@
             "Score": "82.4"
         },
         {
-            "2020": "47=",
+            "2020": "47",
             "2021": "44",
             "Institution": "Georgia Institute of Technology",
             "Location": "United States",
@@ -2692,7 +2693,7 @@
             "Score": "82.4"
         },
         {
-            "2020": "37=",
+            "2020": "37",
             "2021": "45",
             "Institution": "The University of Edinburgh",
             "Location": "United Kingdom",
@@ -2703,7 +2704,7 @@
             "Score": "82.4"
         },
         {
-            "2020": "44  ",
+            "2020": "44",
             "2021": "46",
             "Institution": "KAIST - Korea Advanced Institute of Science & Technology",
             "Location": "South Korea",
@@ -2714,7 +2715,7 @@
             "Score": "82.2"
         },
         {
-            "2020": "52=",
+            "2020": "52",
             "2021": "47",
             "Institution": "University of Wisconsin-Madison",
             "Location": "United States",
@@ -2725,7 +2726,7 @@
             "Score": "82.1"
         },
         {
-            "2020": "47=",
+            "2020": "47",
             "2021": "48",
             "Institution": "McGill University",
             "Location": "Canada",
@@ -2736,7 +2737,7 @@
             "Score": "81.5"
         },
         {
-            "2020": "60=",
+            "2020": "60",
             "2021": "49",
             "Institution": "Nanjing University",
             "Location": "China",
@@ -2747,7 +2748,7 @@
             "Score": "81.3"
         },
         {
-            "2020": "70=",
+            "2020": "70",
             "2021": "50",
             "Institution": "University of Colorado Boulder",
             "Location": "United States",
@@ -2760,7 +2761,7 @@
     ],
     "social_sciences_and_management": [
         {
-            "2020": "1  ",
+            "2020": "1",
             "2021": "1",
             "Institution": "Harvard University",
             "Location": "United States",
@@ -2771,7 +2772,7 @@
             "Score": "97.8"
         },
         {
-            "2020": "2  ",
+            "2020": "2",
             "2021": "2",
             "Institution": "The London School of Economics and Political Science (LSE)",
             "Location": "United Kingdom",
@@ -2782,7 +2783,7 @@
             "Score": "94.5"
         },
         {
-            "2020": "3  ",
+            "2020": "3",
             "2021": "3",
             "Institution": "Stanford University",
             "Location": "United States",
@@ -2793,7 +2794,7 @@
             "Score": "93.7"
         },
         {
-            "2020": "4  ",
+            "2020": "4",
             "2021": "4",
             "Institution": "University of Oxford",
             "Location": "United Kingdom",
@@ -2804,7 +2805,7 @@
             "Score": "93.7"
         },
         {
-            "2020": "5  ",
+            "2020": "5",
             "2021": "5",
             "Institution": "University of Cambridge",
             "Location": "United Kingdom",
@@ -2815,7 +2816,7 @@
             "Score": "92.9"
         },
         {
-            "2020": "6  ",
+            "2020": "6",
             "2021": "6",
             "Institution": "Massachusetts Institute of Technology (MIT)",
             "Location": "United States",
@@ -2826,7 +2827,7 @@
             "Score": "92.4"
         },
         {
-            "2020": "7  ",
+            "2020": "7",
             "2021": "7",
             "Institution": "University of California, Berkeley (UCB)",
             "Location": "United States",
@@ -2837,7 +2838,7 @@
             "Score": "90"
         },
         {
-            "2020": "8  ",
+            "2020": "8",
             "2021": "8",
             "Institution": "Yale University",
             "Location": "United States",
@@ -2848,7 +2849,7 @@
             "Score": "89.1"
         },
         {
-            "2020": "12  ",
+            "2020": "12",
             "2021": "9",
             "Institution": "National University of Singapore (NUS)",
             "Location": "Singapore",
@@ -2859,7 +2860,7 @@
             "Score": "88.9"
         },
         {
-            "2020": "15  ",
+            "2020": "15",
             "2021": "10",
             "Institution": "University of Chicago",
             "Location": "United States",
@@ -2870,7 +2871,7 @@
             "Score": "88"
         },
         {
-            "2020": "9  ",
+            "2020": "9",
             "2021": "11",
             "Institution": "University of California, Los Angeles (UCLA)",
             "Location": "United States",
@@ -2881,7 +2882,7 @@
             "Score": "87.8"
         },
         {
-            "2020": "10  ",
+            "2020": "10",
             "2021": "12",
             "Institution": "Columbia University",
             "Location": "United States",
@@ -2892,7 +2893,7 @@
             "Score": "87.2"
         },
         {
-            "2020": "13  ",
+            "2020": "13",
             "2021": "13",
             "Institution": "New York University (NYU)",
             "Location": "United States",
@@ -2903,7 +2904,7 @@
             "Score": "87.2"
         },
         {
-            "2020": "11  ",
+            "2020": "11",
             "2021": "14",
             "Institution": "University of Pennsylvania",
             "Location": "United States",
@@ -2914,7 +2915,7 @@
             "Score": "87.2"
         },
         {
-            "2020": "14  ",
+            "2020": "14",
             "2021": "15",
             "Institution": "Princeton University",
             "Location": "United States",
@@ -2925,7 +2926,7 @@
             "Score": "86.9"
         },
         {
-            "2020": "16  ",
+            "2020": "16",
             "2021": "16",
             "Institution": "Bocconi University",
             "Location": "Italy",
@@ -2936,7 +2937,7 @@
             "Score": "86.7"
         },
         {
-            "2020": "23=",
+            "2020": "23",
             "2021": "17",
             "Institution": "Nanyang Technological University, Singapore (NTU)",
             "Location": "Singapore",
@@ -2947,7 +2948,7 @@
             "Score": "85.4"
         },
         {
-            "2020": "18=",
+            "2020": "18",
             "2021": "18",
             "Institution": "University of Toronto",
             "Location": "Canada",
@@ -2958,7 +2959,7 @@
             "Score": "84.1"
         },
         {
-            "2020": "18=",
+            "2020": "18",
             "2021": "19",
             "Institution": "Northwestern University",
             "Location": "United States",
@@ -2969,7 +2970,7 @@
             "Score": "83.8"
         },
         {
-            "2020": "21=",
+            "2020": "21",
             "2021": "20",
             "Institution": "University of British Columbia",
             "Location": "Canada",
@@ -2980,7 +2981,7 @@
             "Score": "83.6"
         },
         {
-            "2020": "20  ",
+            "2020": "20",
             "2021": "21",
             "Institution": "Peking University",
             "Academic": "84.6",
@@ -2990,7 +2991,7 @@
             "Score": "83.4"
         },
         {
-            "2020": "27  ",
+            "2020": "27",
             "2021": "22",
             "Institution": "University of Michigan-Ann Arbor",
             "Location": "United States",
@@ -3001,7 +3002,7 @@
             "Score": "83.3"
         },
         {
-            "2020": "28  ",
+            "2020": "28",
             "2021": "23",
             "Institution": "London Business School",
             "Location": "United Kingdom",
@@ -3012,7 +3013,7 @@
             "Score": "83.2"
         },
         {
-            "2020": "17  ",
+            "2020": "17",
             "2021": "24",
             "Institution": "The University of Melbourne",
             "Location": "Australia",
@@ -3023,7 +3024,7 @@
             "Score": "82.9"
         },
         {
-            "2020": "31  ",
+            "2020": "31",
             "2021": "25",
             "Institution": "INSEAD",
             "Location": "France",
@@ -3034,7 +3035,7 @@
             "Score": "82.7"
         },
         {
-            "2020": "21=",
+            "2020": "21",
             "2021": "26",
             "Institution": "The University of Hong Kong",
             "Location": "Hong Kong",
@@ -3045,7 +3046,7 @@
             "Score": "82.3"
         },
         {
-            "2020": "32  ",
+            "2020": "32",
             "2021": "27",
             "Institution": "Tsinghua University",
             "Academic": "81",
@@ -3055,7 +3056,7 @@
             "Score": "81.6"
         },
         {
-            "2020": "25=",
+            "2020": "25",
             "2021": "28",
             "Institution": "UCL",
             "Location": "United Kingdom",
@@ -3066,7 +3067,7 @@
             "Score": "81.5"
         },
         {
-            "2020": "37=",
+            "2020": "37",
             "2021": "29",
             "Institution": "Pontificia Universidad Católica de Chile (UC)",
             "Location": "Chile",
@@ -3077,7 +3078,7 @@
             "Score": "81.4"
         },
         {
-            "2020": "35  ",
+            "2020": "35",
             "2021": "30",
             "Institution": "University of Amsterdam",
             "Location": "Netherlands",
@@ -3088,7 +3089,7 @@
             "Score": "81.4"
         },
         {
-            "2020": "29=",
+            "2020": "29",
             "2021": "31",
             "Institution": "Seoul National University",
             "Location": "South Korea",
@@ -3099,7 +3100,7 @@
             "Score": "81.3"
         },
         {
-            "2020": "25=",
+            "2020": "25",
             "2021": "32",
             "Institution": "The University of Sydney",
             "Location": "Australia",
@@ -3110,7 +3111,7 @@
             "Score": "81.1"
         },
         {
-            "2020": "37  ",
+            "2020": "37",
             "2021": "33",
             "Institution": "Cornell University",
             "Location": "United States",
@@ -3121,7 +3122,7 @@
             "Score": "80.9"
         },
         {
-            "2020": "29=",
+            "2020": "29",
             "2021": "34",
             "Institution": "The Australian National University",
             "Location": "Australia",
@@ -3132,7 +3133,7 @@
             "Score": "80.7"
         },
         {
-            "2020": "23=",
+            "2020": "23",
             "2021": "35",
             "Institution": "The University of Tokyo",
             "Location": "Japan",
@@ -3143,7 +3144,7 @@
             "Score": "80.7"
         },
         {
-            "2020": "46  ",
+            "2020": "46",
             "2021": "36",
             "Institution": "Erasmus University Rotterdam",
             "Location": "Netherlands",
@@ -3154,7 +3155,7 @@
             "Score": "80.6"
         },
         {
-            "2020": "42  ",
+            "2020": "42",
             "2021": "37",
             "Institution": "Universidad Nacional Autónoma de México  (UNAM)",
             "Location": "Mexico",
@@ -3165,7 +3166,7 @@
             "Score": "80.5"
         },
         {
-            "2020": "39=",
+            "2020": "39",
             "2021": "38",
             "Institution": "Duke University",
             "Location": "United States",
@@ -3176,7 +3177,7 @@
             "Score": "80.4"
         },
         {
-            "2020": "33  ",
+            "2020": "33",
             "2021": "39",
             "Institution": "The Hong Kong University of Science and Technology",
             "Location": "Hong Kong",
@@ -3187,7 +3188,7 @@
             "Score": "79.9"
         },
         {
-            "2020": "34  ",
+            "2020": "34",
             "2021": "40",
             "Institution": "The University of New South Wales (UNSW Sydney)",
             "Location": "Australia",
@@ -3198,7 +3199,7 @@
             "Score": "79.9"
         },
         {
-            "2020": "43=",
+            "2020": "43",
             "2021": "41",
             "Institution": "HEC Paris School of Management",
             "Location": "France",
@@ -3209,7 +3210,7 @@
             "Score": "79.5"
         },
         {
-            "2020": "36  ",
+            "2020": "36",
             "2021": "42",
             "Institution": "The University of Warwick",
             "Location": "United Kingdom",
@@ -3220,7 +3221,7 @@
             "Score": "79.4"
         },
         {
-            "2020": "43=",
+            "2020": "43",
             "2021": "43",
             "Institution": "McGill University",
             "Location": "Canada",
@@ -3231,7 +3232,7 @@
             "Score": "79.3"
         },
         {
-            "2020": "47=",
+            "2020": "47",
             "2021": "44",
             "Institution": "University of Texas at Austin",
             "Location": "United States",
@@ -3242,7 +3243,7 @@
             "Score": "79.1"
         },
         {
-            "2020": "37=",
+            "2020": "37",
             "2021": "45",
             "Institution": "The University of Manchester",
             "Location": "United Kingdom",
@@ -3253,7 +3254,7 @@
             "Score": "78.9"
         },
         {
-            "2020": "43=",
+            "2020": "43",
             "2021": "46",
             "Institution": "Korea University",
             "Location": "South Korea",
@@ -3264,7 +3265,7 @@
             "Score": "78.7"
         },
         {
-            "2020": "39=",
+            "2020": "39",
             "2021": "47",
             "Institution": "Monash University",
             "Location": "Australia",
@@ -3275,7 +3276,7 @@
             "Score": "78.7"
         },
         {
-            "2020": "59=",
+            "2020": "59",
             "2021": "48",
             "Institution": "HSE University",
             "Location": "Russia",
@@ -3286,7 +3287,7 @@
             "Score": "78.5"
         },
         {
-            "2020": "47=",
+            "2020": "47",
             "2021": "49",
             "Institution": "Fudan University",
             "Academic": "79.8",
@@ -3296,7 +3297,7 @@
             "Score": "78.4"
         },
         {
-            "2020": "41  ",
+            "2020": "41",
             "2021": "50",
             "Institution": "The Chinese University of Hong Kong (CUHK)",
             "Location": "Hong Kong",

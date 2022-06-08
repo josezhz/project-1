@@ -14,13 +14,28 @@
 </head>
 
 <body>
-    <nav>
-        <div class="d-flex">
+    <nav id="nav-chart">
+
+        <div class="container d-flex mt-3">
             <input type="radio" class="btn-check" name="display" id="btnMap">
-            <a href="/html/map.html" id="btn-map" class="btn btn-outline-success" for="btnMap">Map</a>
+            <a href="/html/map.html" id="btn-map" class="btn btn-outline-light" for="btnMap">Map</a>
             <input type="radio" class="btn-check" name="display" id="btnChart" checked>
-            <a href="/html/chart.html" id="btn-chart" class="btn btn-outline-success" for="btnChart">Chart</a>
+            <a href="/html/chart.html" id="btn-chart" class="btn btn-outline-light" for="btnChart">Chart</a>
         </div>
+
+        <div class="container input-group">
+            <label class="input-group-text" id="label-subject" for="select-subject">Subject:</label>
+            <select class="form-select" aria-label="Default select example" id="select-subject">
+                <option value="1" selected>Overall</option>
+                <option value="2">Arts & Humanities</option>
+                <option value="3">Engineering & Technology</option>
+                <option value="4">Life Sciences & Medicine</option>
+                <option value="5">Natural Sciences</option>
+                <option value="6">Social Sciences & Management</option>
+            </select>
+            <!-- <input type="button" class="btn btn-success rounded-pill" id="btnSubject" value="Search"> -->
+        </div>
+
     </nav>
 
     <div id="chart" class="container-fluid">

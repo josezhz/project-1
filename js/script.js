@@ -14,13 +14,14 @@ resultsLayer.addTo(map)
 document.querySelector('#btnSubject').addEventListener('click', async function () {
     resultsLayer.clearLayers()
     let subject = document.querySelector('#select-subject').value
-    let res = await axios.get('../qs_2021.json')
+    let res = await axios.get('../qs_2021_with_latlng.json')
     let rankings = res.data[subject]
     for (eachUni in rankings) {
         let name = rankings[eachUni].Institution
         let country = rankings[eachUni].Location
-        let address = name + ", " + country
 
+        /*
+        let address = name + ", " + country
         let response = await axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
             params: {
                 address: address,
@@ -30,6 +31,9 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         let location = response.data.results[0].geometry.location
         let lat = Number(location.lat)
         let lng = Number(location.lng)
+        */
+        let lat = rankings[eachUni].lat
+        let lng = rankings[eachUni].lng
 
         let rank = rankings[eachUni][2021]
         let countryCode = country.toLowerCase()
@@ -43,6 +47,6 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
             <h3>${name}</h3>
         `).openPopup()
         marker.addTo(resultsLayer)
-        break
+        console.log(name, lat, lng)
     }
 })

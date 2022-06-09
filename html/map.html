@@ -21,17 +21,17 @@
         <div class="container d-flex mt-3">
             <input type="radio" class="btn-check" name="display" id="btnMap">
             <a href="/html/map.html" id="btn-map-on" class="btn btn-outline-light btn-map" for="btnMap">
-                <i class="fi fi-ss-map-marker"></i>
+                <i class="fi fi-ss-map-marker ms-2 me-1"></i>
             </a>
             <input type="radio" class="btn-check" name="display" id="btnChart">
             <a href="/html/chart.html" id="btn-chart-off" class="btn btn-outline-light btn-chart" for="btnChart">
-                <i class="fi fi-br-chart-histogram"></i>
+                <i class="fi fi-br-chart-histogram ms-1 me-2"></i>
             </a>
         </div>
 
-        <div class="container input-group mt-3">
-            <label class="input-group-text" id="label-subject" for="select-subject">Subject:</label>
-            <select class="form-select" aria-label="Default select example" id="select-subject">
+        <div class="container mt-3 d-block">
+            <label class="input-group-text nav-label" for="select-subject">Subject:</label>
+            <select class="form-select" id="select-subject">
                 <option value="overall" selected>Overall</option>
                 <option value="arts_and_humanities">Arts & Humanities</option>
                 <option value="engineering_and_technology">Engineering & Technology</option>
@@ -41,8 +41,14 @@
             </select>
         </div>
 
-        <div class="container input-group mt-3">
-
+        <div class="container mt-3">
+            <label class="input-group-text nav-label">Rank:</label>
+        </div>
+        <div class="container input-group">
+            <label class="input-group-text label-rank-from" for="select-rank-s">From</label>
+            <select class="form-select" id="select-rank-s"></select>
+            <label class="input-group-text label-rank-to" for="select-rank-e">to</label>
+            <select class="form-select" id="select-rank-e"></select>
         </div>
 
         <div class="container mt-3">

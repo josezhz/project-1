@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-    width: 300px;
+    min-width: 300px;
     height: 100vh;
     background-color: white;
     border: 4px solid;
@@ -39,8 +39,8 @@ nav {
 .btn-map {
     border-top-left-radius: 50rem;
     border-bottom-left-radius: 50rem;
-    border: 3px solid var(--green);
-    border-right: 0px solid;
+    border: 2px solid var(--green);
+    border-right: 0;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -57,8 +57,8 @@ nav {
 .btn-chart {
     border-top-right-radius: 50rem;
     border-bottom-right-radius: 50rem;
-    border: 3px solid var(--purple);
-    border-left: 0px solid;
+    border: 2px solid var(--purple);
+    border-left: 0;
     font-weight: 700;
 }
 .btn-chart:hover, #btn-chart-on {
@@ -70,32 +70,62 @@ nav {
     background-color: white;
 }
 
-#label-subject {
-    display: block;
-    margin-right: auto;
-    width: auto;
+.nav-label {
+    margin-bottom: 2px;
+    width: fit-content;
     background-color: var(--green);
     color: white;
     font-weight: 500;
     border: 0;
-    border-radius: 50rem;
-    border-bottom-left-radius: 0;
+    border-radius: 50rem !important;
+    border-bottom-left-radius: 0 !important;
 }
 
 #select-subject {
-    display: block;
     margin-left: auto;
-    width: auto;
     color: var(--green);
     font-weight: 500;
     border: 2px solid var(--green);
-    border-radius: 50rem;
-    border-top-left-radius: 0;
+    border-radius: 50rem !important;
+    border-top-left-radius: 0 !important;
 }
 
-#select-subject option {
+.select-subject option {
     font-weight: 500;
     border: 5px solid var(--green);
+}
+
+.label-rank-from {
+    width: fit-content;
+    background-color: var(--green);
+    color: white;
+    font-weight: 500;
+    border: 0;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+}
+.label-rank-to {
+    width: fit-content;
+    background-color: var(--green);
+    color: white;
+    font-weight: 500;
+    border: 0;
+}
+#select-rank-s {
+    margin-left: auto;
+    color: var(--green);
+    font-weight: 500;
+    border: 2px solid var(--green);
+    border-radius: 0 !important;
+}
+#select-rank-e {
+    margin-left: auto;
+    color: var(--green);
+    font-weight: 500;
+    border: 2px solid var(--green);
+    border-radius: 50rem !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
 }
 
 #container-search-by-uni {

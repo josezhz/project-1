@@ -11,6 +11,23 @@ let map = createMap()
 let resultsLayer = L.layerGroup()
 resultsLayer.addTo(map)
 
+let selectRankS = document.querySelector('#select-rank-s')
+let selectRankE = document.querySelector('#select-rank-e')
+for (let i = 1; i <= 50; i++) {
+    let optionElement = document.createElement('option')
+    optionElement.innerHTML = i
+    optionElement.value = i
+    if (i == 1) { optionElement.selected = true }
+    selectRankS.appendChild(optionElement)
+}
+for (let i = 1; i <= 50; i++) {
+    let optionElement = document.createElement('option')
+    optionElement.innerHTML = i
+    optionElement.value = i
+    if (i == 50) { optionElement.selected = true }
+    selectRankE.appendChild(optionElement)
+}
+
 document.querySelector('#btnSubject').addEventListener('click', async function () {
     resultsLayer.clearLayers()
     let subject = document.querySelector('#select-subject').value

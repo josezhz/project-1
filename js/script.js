@@ -16,11 +16,22 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
     let subject = document.querySelector('#select-subject').value
     let res = await axios.get('../qs_2021_with_latlng.json')
     let rankings = res.data[subject]
+    document.querySelector('#container-search-by-uni').style.zIndex = 701
+    document.querySelector('#unis').innerHTML = ''
     for (eachUni in rankings) {
         let name = rankings[eachUni].Institution
         let country = rankings[eachUni].Location
+        let rank = rankings[eachUni][2021]
+        let uniId = subject + "_" + rank
+        console.log(uniId)
+
+        // create options for the datalist
+        let optionElement = document.createElement('option')
+        optionElement.value = name
+        document.querySelector('#unis').appendChild(optionElement)
 
         /*
+        // get latlng from google map api
         let address = name + ", " + country
         let response = await axios.get('https://maps.googleapis.com/maps/api/geocode/json', {
             params: {
@@ -32,10 +43,11 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         let lat = Number(location.lat)
         let lng = Number(location.lng)
         */
+        // get latlng from localized data
         let lat = rankings[eachUni].lat
         let lng = rankings[eachUni].lng
 
-        let rank = rankings[eachUni][2021]
+        // generate country flag for the popup
         let countryCode = country.toLowerCase()
         if (country == "South Korea") { countryCode = "kr" }
         if (country == "Russia") { countryCode = "ru" }
@@ -47,6 +59,5 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
             <h3>${name}</h3>
         `).openPopup()
         marker.addTo(resultsLayer)
-        console.log(name, lat, lng)
     }
 })

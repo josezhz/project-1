@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
         integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
         crossorigin="" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel="stylesheet" href="../css/style.css">
     <title>Hello, world!</title>
 </head>
@@ -18,9 +20,13 @@
 
         <div class="container d-flex mt-3">
             <input type="radio" class="btn-check" name="display" id="btnMap">
-            <a href="/html/map.html" id="btn-map" class="btn btn-outline-light" for="btnMap">Map</a>
-            <input type="radio" class="btn-check" name="display" id="btnChart" checked>
-            <a href="/html/chart.html" id="btn-chart" class="btn btn-outline-light" for="btnChart">Chart</a>
+            <a href="/html/map.html" id="btn-map-off" class="btn btn-outline-light btn-map" for="btnMap">
+                <i class="fi fi-ss-map-marker"></i>
+            </a>
+            <input type="radio" class="btn-check" name="display" id="btnChart">
+            <a href="/html/chart.html" id="btn-chart-on" class="btn btn-outline-light btn-chart" for="btnChart">
+                <i class="fi fi-br-chart-histogram"></i>
+            </a>
         </div>
 
         <div class="container input-group">
@@ -39,7 +45,7 @@
     </nav>
 
     <div id="chart" class="container-fluid">
-        
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"

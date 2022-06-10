@@ -30,6 +30,20 @@ for (let i = 1; i <= 50; i++) {
 
 document.querySelector('#btnSubject').addEventListener('click', async function () {
     resultsLayer.clearLayers()
+
+    let overlayMaps = {
+        "All results": resultsLayer
+    }
+    let layerControl = L.control.layers(null, overlayMaps).addTo(map)
+
+    let usIcon = L.icon({
+        iconUrl: '../images/country_markers/united-states.png',
+
+        iconSize:     [50, 50],
+        iconAnchor:   [25, 50],
+        popupAnchor:  [0, -50]
+    })
+
     let subject = document.querySelector('#select-subject').value
     let res = await axios.get('../qs_2021_with_latlng.json')
     let rankings = res.data[subject]
@@ -39,8 +53,6 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         let name = rankings[eachUni].Institution
         let country = rankings[eachUni].Location
         let rank = rankings[eachUni][2021]
-        let uniId = subject + "_" + rank
-        console.log(uniId)
 
         // create options for the datalist
         let optionElement = document.createElement('option')
@@ -68,13 +80,36 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         let countryCode = country.toLowerCase()
         if (country == "South Korea") { countryCode = "kr" }
         if (country == "Russia") { countryCode = "ru" }
-        let imgElementFlag = `<img src="https://countryflagsapi.com/png/${countryCode}" style="height: 50px; border: 1px solid black;"/>`
-        let marker = L.marker([lat, lng])
+        let imgElementFlag = `<img src="https://countryflagsapi.com/png/${countryCode}" class="border rounded" height="50px"/>`
+        let marker = L.marker([lat, lng], {icon: usIcon})
         marker.bindPopup(`
             <h5>Rank: ${rank}</h5>
             ${imgElementFlag}
             <h3>${name}</h3>
+            <div id="popup-chart-${rank}" style="width: 300px;"></div>
         `).openPopup()
+
+
+
+        marker.addEventListener('click', function() {
+            var options = {
+                chart: {
+                    type: 'line'
+                },
+                series: [{
+                    name: 'sales',
+                    data: [30, 40, 35, 50, 49, 60, 70, 91, 125]
+                }],
+                xaxis: {
+                    categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
+                }
+            }
+
+            var chart = new ApexCharts(document.querySelector(`#popup-chart-${rank}`), options);
+
+            chart.render()
+        })
+
         marker.addTo(resultsLayer)
     }
 })

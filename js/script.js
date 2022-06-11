@@ -45,7 +45,7 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
     })
 
     let subject = document.querySelector('#select-subject').value
-    let res = await axios.get('../qs_2021_with_latlng.json')
+    let res = await axios.get('../json/qs_2021_with_latlng.json')
     let rankings = res.data[subject]
     document.querySelector('#container-search-by-uni').style.zIndex = 701
     document.querySelector('#unis').innerHTML = ''

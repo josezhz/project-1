@@ -1,0 +1,58 @@
+{
+    "country_code": [
+        {
+            "Argentina": "ar",
+            "Australia": "au",
+            "Austria": "at",
+            "Belgium": "be",
+            "Canada": "ca",
+            "Chile": "cl",
+            "China": "cn",
+            "Denmark": "dk",
+            "France": "fr",
+            "Germany": "de",
+            "Hong Kong": "hk",
+            "India": "in",
+            "Italy": "it",
+            "Japan": "jp",
+            "Mexico": "mx",
+            "Netherlands": "nl",
+            "Russia": "ru",
+            "Singapore": "sg",
+            "South Korea": "kr",
+            "Sweden": "se",
+            "Switzerland": "ch",
+            "Taiwan": "tw",
+            "United Kingdom": "gb",
+            "United States": "us"
+        }
+    ],
+    "region": [
+        {
+            "Argentina": "latin_america",
+            "Australia": "oceania",
+            "Austria": "europe",
+            "Belgium": "europe",
+            "Canada": "north_america",
+            "Chile": "latin_america",
+            "China": "asia",
+            "Denmark": "europe",
+            "France": "europe",
+            "Germany": "europe",
+            "Hong Kong": "asia",
+            "India": "asia",
+            "Italy": "europe",
+            "Japan": "asia",
+            "Mexico": "latin_america",
+            "Netherlands": "europe",
+            "Russia": "europe",
+            "Singapore": "asia",
+            "South Korea": "asia",
+            "Sweden": "europe",
+            "Switzerland": "europe",
+            "Taiwan": "asia",
+            "United Kingdom": "europe",
+            "United States": "north_america"
+        }
+    ]
+}

@@ -8,8 +8,12 @@ function createMap() {
 }
 
 let map = createMap()
-let resultsLayer = L.layerGroup()
-resultsLayer.addTo(map)
+let asiaLayer = L.layerGroup().addTo(map)
+let europeLayer = L.layerGroup().addTo(map)
+let latin_americaLayer = L.layerGroup().addTo(map)
+let north_americaLayer = L.layerGroup().addTo(map)
+let oceaniaLayer = L.layerGroup().addTo(map)
+let allLayers = [asiaLayer, europeLayer, latin_americaLayer, north_americaLayer, oceaniaLayer]
 
 let selectRankS = document.querySelector('#select-rank-s')
 let selectRankE = document.querySelector('#select-rank-e')
@@ -29,24 +33,27 @@ for (let i = 1; i <= 50; i++) {
 }
 
 document.querySelector('#btnSubject').addEventListener('click', async function () {
-    resultsLayer.clearLayers()
+    for (eachLayer of allLayers) {
+        eachLayer.clearLayers()
+    }
 
     let overlayMaps = {
-        "All results": resultsLayer
+        "Asia": asiaLayer,
+        "Europe": europeLayer,
+        "Latin America": latin_americaLayer,
+        "North America": north_americaLayer,
+        "Oceania": oceaniaLayer
     }
     let layerControl = L.control.layers(null, overlayMaps).addTo(map)
 
-    let usIcon = L.icon({
-        iconUrl: '../images/country_markers/united-states.png',
-
-        iconSize:     [50, 50],
-        iconAnchor:   [25, 50],
-        popupAnchor:  [0, -50]
-    })
-
     let subject = document.querySelector('#select-subject').value
-    let res = await axios.get('../json/qs_2021_with_latlng.json')
-    let rankings = res.data[subject]
+    let resRankings = await axios.get('../json/qs_2021_with_latlng.json')
+    let rankings = resRankings.data[subject]
+
+    let resCountriesInfo = await axios.get('../json/countries_info.json')
+    let countryCodes = resCountriesInfo.data.country_code[0]
+    let regions = resCountriesInfo.data.region[0]
+
     document.querySelector('#container-search-by-uni').style.zIndex = 701
     document.querySelector('#unis').innerHTML = ''
     for (eachUni in rankings) {
@@ -76,12 +83,19 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         let lat = rankings[eachUni].lat
         let lng = rankings[eachUni].lng
 
-        // generate country flag for the popup
-        let countryCode = country.toLowerCase()
-        if (country == "South Korea") { countryCode = "kr" }
-        if (country == "Russia") { countryCode = "ru" }
+        // generate marker
+        let countryIcon = L.icon({
+            iconUrl: `../images/country_markers/united-states.png`,
+
+            iconSize: [50, 50],
+            iconAnchor: [25, 50],
+            popupAnchor: [0, -50]
+        })
+        let marker = L.marker([lat, lng], { icon: countryIcon })
+
+        // generate popup
+        let countryCode = countryCodes[country]
         let imgElementFlag = `<img src="https://countryflagsapi.com/png/${countryCode}" class="border rounded" height="50px"/>`
-        let marker = L.marker([lat, lng], {icon: usIcon})
         marker.bindPopup(`
             <h5>Rank: ${rank}</h5>
             ${imgElementFlag}
@@ -91,7 +105,7 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
 
 
 
-        marker.addEventListener('click', function() {
+        marker.addEventListener('click', function () {
             var options = {
                 chart: {
                     type: 'line'
@@ -110,6 +124,19 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
             chart.render()
         })
 
-        marker.addTo(resultsLayer)
+
+
+        let region = regions[country]
+        if (region == "asia") {
+            marker.addTo(asiaLayer)
+        } else if (region == "europe") {
+            marker.addTo(europeLayer)
+        } else if (region == "latin_america") {
+            marker.addTo(latin_americaLayer)
+        } else if (region == "north_america") {
+            marker.addTo(north_americaLayer)
+        } else if (region == "oceania") {
+            marker.addTo(oceaniaLayer)
+        }
     }
 })

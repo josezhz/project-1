@@ -14,6 +14,14 @@ let latin_americaLayer = L.layerGroup().addTo(map)
 let north_americaLayer = L.layerGroup().addTo(map)
 let oceaniaLayer = L.layerGroup().addTo(map)
 let allLayers = [asiaLayer, europeLayer, latin_americaLayer, north_americaLayer, oceaniaLayer]
+let overlayMaps = {
+    "Asia": asiaLayer,
+    "Europe": europeLayer,
+    "Latin America": latin_americaLayer,
+    "North America": north_americaLayer,
+    "Oceania": oceaniaLayer
+}
+let layerControl = L.control.layers(null, overlayMaps).addTo(map)
 
 let selectRankS = document.querySelector('#select-rank-s')
 let selectRankE = document.querySelector('#select-rank-e')
@@ -37,14 +45,7 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         eachLayer.clearLayers()
     }
 
-    let overlayMaps = {
-        "Asia": asiaLayer,
-        "Europe": europeLayer,
-        "Latin America": latin_americaLayer,
-        "North America": north_americaLayer,
-        "Oceania": oceaniaLayer
-    }
-    let layerControl = L.control.layers(null, overlayMaps).addTo(map)
+
 
     let subject = document.querySelector('#select-subject').value
     let resRankings = await axios.get('../json/qs_2021_with_latlng.json')
@@ -84,17 +85,30 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         let lng = rankings[eachUni].lng
 
         // generate marker
-        let countryIcon = L.icon({
-            iconUrl: `../images/country_markers/united-states.png`,
+        let countryCode = countryCodes[country]
+        let countryIconType = ""
+        if (rank == 1) {countryIconType = "-gold"}
+        if (rank == 2) {countryIconType = "-silver"}
+        if (rank == 3) {countryIconType = "-bronze"}
+        let iconSize = [50, 50]
+        let iconAnchor = [25, 50]
+        let popupAnchor = [0, -50]
+        if (countryIconType) {
+            iconSize = [70, 70]
+            iconAnchor = [35, 70]
+            popupAnchor = [0, -70]
+        }
 
-            iconSize: [50, 50],
-            iconAnchor: [25, 50],
-            popupAnchor: [0, -50]
+        let countryIcon = L.icon({
+            iconUrl: `../images/country_markers/${countryCode}${countryIconType}.png`,
+
+            iconSize: iconSize,
+            iconAnchor: iconAnchor,
+            popupAnchor: popupAnchor
         })
         let marker = L.marker([lat, lng], { icon: countryIcon })
 
         // generate popup
-        let countryCode = countryCodes[country]
         let imgElementFlag = `<img src="https://countryflagsapi.com/png/${countryCode}" class="border rounded" height="50px"/>`
         marker.bindPopup(`
             <h5>Rank: ${rank}</h5>

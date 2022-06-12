@@ -45,11 +45,15 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         eachLayer.clearLayers()
     }
 
-
-
     let subject = document.querySelector('#select-subject').value
     let resRankings = await axios.get('../json/qs_2021_with_latlng.json')
     let rankings = resRankings.data[subject]
+    let rankStart = Number(document.querySelector('#select-rank-s').value)
+    let rankEnd = Number(document.querySelector('#select-rank-e').value)
+    if (rankStart > rankEnd) {alert(`
+        Invalid Input @ Rank
+        (second number must be larger or equal to first number)
+    `)}
 
     let resCountriesInfo = await axios.get('../json/countries_info.json')
     let countryCodes = resCountriesInfo.data.country_code[0]
@@ -57,7 +61,7 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
 
     document.querySelector('#container-search-by-uni').style.zIndex = 701
     document.querySelector('#unis').innerHTML = ''
-    for (eachUni in rankings) {
+    for (let eachUni = rankStart - 1; eachUni < rankEnd; eachUni++) {
         let name = rankings[eachUni].Institution
         let country = rankings[eachUni].Location
         let rank = rankings[eachUni][2021]
@@ -87,9 +91,9 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         // generate marker
         let countryCode = countryCodes[country]
         let countryIconType = ""
-        if (rank == 1) {countryIconType = "-gold"}
-        if (rank == 2) {countryIconType = "-silver"}
-        if (rank == 3) {countryIconType = "-bronze"}
+        if (rank == 1) { countryIconType = "-gold" }
+        if (rank == 2) { countryIconType = "-silver" }
+        if (rank == 3) { countryIconType = "-bronze" }
         let iconSize = [50, 50]
         let iconAnchor = [25, 50]
         let popupAnchor = [0, -50]
@@ -109,16 +113,18 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         let marker = L.marker([lat, lng], { icon: countryIcon })
 
         // generate popup
-        let imgElementFlag = `<img src="https://countryflagsapi.com/png/${countryCode}" class="border rounded" height="50px"/>`
+        let imgElementFlag = `<img src="https://countryflagsapi.com/png/${countryCode}" class="border rounded" height="30px"/>`
         marker.bindPopup(`
-            <h5>Rank: ${rank}</h5>
-            ${imgElementFlag}
-            <h3>${name}</h3>
+            <div class="d-flex justify-content-between">
+                <div class="align-self-end fs-5">Rank: <span class="fs-3">${rank}</span></div>
+                ${imgElementFlag}
+            </div>
+            <hr class="m-0 mb-1">
+            <h4>${name}</h4>
             <div id="popup-chart-${rank}" style="width: 300px;"></div>
         `).openPopup()
 
-
-
+        // generate popup chart
         marker.addEventListener('click', function () {
             var options = {
                 chart: {

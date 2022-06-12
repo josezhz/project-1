@@ -42,21 +42,24 @@ for (let i = 1; i <= 50; i++) {
 }
 
 // generate options for country filter
-(async function run() {
+(async function () {
     let response = await axios.get('../json/countries_info.json')
     let countryCodes = response.data.country_code[0]
     for (eachCountry in countryCodes) {
         let optionElementCountry = document.createElement('option')
         optionElementCountry.innerHTML = eachCountry
-        optionElementCountry.value = countryCodes[eachCountry]
+        optionElementCountry.value = eachCountry
         document.querySelector('#select-country').appendChild(optionElementCountry)
     }
 })()
 
-document.querySelector('#btnSubject').addEventListener('click', async function () {
+document.querySelector('#btn-search').addEventListener('click', async function () {
     for (eachLayer of allLayers) {
         eachLayer.clearLayers()
     }
+
+    map.flyTo([20, 20], 2)
+    markers = []
 
     let subject = document.querySelector('#select-subject').value
     let resRankings = await axios.get('../json/qs_2021_with_latlng.json')
@@ -75,18 +78,26 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
     let resCountriesInfo = await axios.get('../json/countries_info.json')
     let countryCodes = resCountriesInfo.data.country_code[0]
     let regions = resCountriesInfo.data.region[0]
+    let countryListWithResults = []
+    for (let eachUni = rankS - 1; eachUni < rankE; eachUni++) {
+        if (!countryListWithResults.includes(rankings[eachUni].Location)) {
+            countryListWithResults.push(rankings[eachUni].Location)
+        }
+    }
 
-    document.querySelector('#container-search-by-uni').style.zIndex = 699
+    if (!countrySelected || countryListWithResults.includes(countrySelected)) {
+        document.querySelector('#container-search-by-uni').style.display = 'flex'
+        document.querySelector('#container-no-results').style.display = 'none'
+    } else {
+        document.querySelector('#container-search-by-uni').style.display = 'none'
+        document.querySelector('#container-no-results').style.display = 'flex'
+        document.querySelector('#country-with-no-results').innerHTML = countrySelected
+    }
     document.querySelector('#unis').innerHTML = ''
     for (let eachUni = rankS - 1; eachUni < rankE; eachUni++) {
         let name = rankings[eachUni].Institution
         let country = rankings[eachUni].Location
         let rank = rankings[eachUni][2021]
-
-        // create options for the datalist
-        let optionElement = document.createElement('option')
-        optionElement.value = name
-        document.querySelector('#unis').appendChild(optionElement)
 
         /*
         // get latlng from google map api
@@ -127,7 +138,8 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
             iconAnchor: iconAnchor,
             popupAnchor: popupAnchor
         })
-        let marker = L.marker([lat, lng], { icon: countryIcon })
+        let marker = L.marker([lat, lng], { icon: countryIcon, title: `${name}` })
+        markers.push(marker)
 
         // generate popup
         let imgElementFlag = `<img src="https://countryflagsapi.com/png/${countryCode}" class="border rounded" height="30px"/>`
@@ -143,16 +155,16 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         marker.bindPopup(`
             <div class="d-flex">
                 ${imgElementSubject}
-                <span class="text-success fw-bold align-self-end ms-1">${subjectName[subject]}</span>
+                <span class="text-success align-self-end ms-1" style="font-family: 'Verdana';">${subjectName[subject]}</span>
             </div>
             <div class="d-flex justify-content-between">
-                <div class="align-self-end fs-5">Rank: <span class="fs-3">${rank}</span></div>
+                <div class="align-self-end" style="font-family: 'Verdana';">Rank: <span class="fs-5">${rank}</span></div>
                 ${imgElementFlag}
             </div>
-            <hr class="m-0 mb-1 p-1 bg-success rounded-pill">
-            <h4>${name}</h4>
+            <hr class="mt-1 mb-1 p-1 bg-success rounded-pill">
+            <h5 style="font-family: 'Verdana'; font-weight: 500;">${name}</h5>
             <div id="popup-chart-${rank}" style="width: 300px;"></div>
-        `).openPopup()
+        `)
 
         // generate popup chart
         let overallScore = rankings[eachUni].Score
@@ -161,7 +173,7 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         let citationsScore = rankings[eachUni].Citations
         let hScore = rankings[eachUni].H
         marker.addEventListener('click', function () {
-            var options = {
+            let options = {
                 series: [{
                     name: 'Socre',
                     data: [overallScore, academicScore, employerScore, citationsScore, hScore]
@@ -169,6 +181,20 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
                 chart: {
                     type: 'bar',
                     height: 200
+                },
+                title: {
+                    text: 'Scores',
+                    align: 'center',
+                    margin: 0,
+                    offsetX: 0,
+                    offsetY: 0,
+                    floating: true,
+                    style: {
+                        fontSize: '16px',
+                        fontWeight: 400,
+                        fontFamily: 'Verdana',
+                        color: '#198754',
+                    },
                 },
                 plotOptions: {
                     bar: {
@@ -181,7 +207,7 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
                 xaxis: { categories: ['Overall', 'Academic', 'Employer', 'Citations', 'H-Index'] }
             };
 
-            var chart = new ApexCharts(document.querySelector(`#popup-chart-${rank}`), options);
+            let chart = new ApexCharts(document.querySelector(`#popup-chart-${rank}`), options);
             chart.render()
         })
 
@@ -189,11 +215,15 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
         let selected = true
         if (countrySelected) {
             selected = false
-            if (countryCode == countrySelected) {
-                selected = true
-            }
+            if (country == countrySelected) { selected = true }
         }
         if (selected) {
+            // create options for search by uni
+            let optionElementUni = document.createElement('option')
+            optionElementUni.innerHTML = rank
+            optionElementUni.value = name
+            document.querySelector('#unis').appendChild(optionElementUni)
+            // add to overlays of corresponding regions
             if (region == "asia") {
                 marker.addTo(asiaLayer)
             } else if (region == "europe") {
@@ -206,6 +236,16 @@ document.querySelector('#btnSubject').addEventListener('click', async function (
                 marker.addTo(oceaniaLayer)
             }
         }
-
     }
+    document.querySelector('#btn-search-by-uni').addEventListener('click', function () {
+        let uniSelected = document.querySelector('#search-by-uni').value
+        for (eachMarker of markers) {
+            if (eachMarker.options.title == uniSelected) {
+                eachMarker.openPopup()
+                let lat = eachMarker._latlng.lat
+                let lng = eachMarker._latlng.lng
+                map.flyTo([lat, lng], 17)
+            }
+        }
+    })
 })

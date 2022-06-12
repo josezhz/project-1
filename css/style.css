@@ -82,7 +82,7 @@ nav {
     border-bottom-left-radius: 0 !important;
 }
 
-#select-subject {
+#select-subject, #select-country {
     margin-left: auto;
     color: var(--green);
     font-weight: 500;

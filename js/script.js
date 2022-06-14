@@ -1,7 +1,13 @@
 function createMap() {
-    let map = L.map('map').setView([20, 20], 2)
+    let southWest = L.latLng(-90, -160)
+    let northEast = L.latLng(90, 200)
+    let bounds = L.latLngBounds(southWest, northEast)
+    let map = L.map('map', {
+        maxBounds: bounds
+    }).setView([20, 20], 2)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
+        minZoom: 2,
         attribution: '© OpenStreetMap'
     }).addTo(map)
     return map
@@ -138,7 +144,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
             iconAnchor: iconAnchor,
             popupAnchor: popupAnchor
         })
-        let marker = L.marker([lat, lng], { icon: countryIcon, title: `${name}` })
+        let marker = L.marker([lat, lng], { icon: countryIcon, title: `${name}` }).openPopup()
         markers.push(marker)
 
         // generate popup
@@ -158,12 +164,12 @@ document.querySelector('#btn-search').addEventListener('click', async function (
                 <span class="text-success align-self-end ms-1" style="font-family: 'Verdana';">${subjectName[subject]}</span>
             </div>
             <div class="d-flex justify-content-between">
-                <div class="align-self-end" style="font-family: 'Verdana';">Rank: <span class="fs-5">${rank}</span></div>
-                ${imgElementFlag}
+                <div class="align-self-end" style="font-family: 'Verdana';">#<span class="fs-5">${rank}</span></div>
+                <div class="d-flex"><span class="align-self-end me-1">${country}</span>${imgElementFlag}</div>
             </div>
             <hr class="mt-1 mb-1 p-1 bg-success rounded-pill">
             <h5 style="font-family: 'Verdana'; font-weight: 500;">${name}</h5>
-            <div id="popup-chart-${rank}" style="width: 300px;"></div>
+            <div id="popup-chart-${rank}" style="width: 300px"></div>
         `)
 
         // generate popup chart
@@ -220,7 +226,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
         if (selected) {
             // create options for search by uni
             let optionElementUni = document.createElement('option')
-            optionElementUni.innerHTML = rank
+            optionElementUni.innerHTML = "#" + rank + " - " + country
             optionElementUni.value = name
             document.querySelector('#unis').appendChild(optionElementUni)
             // add to overlays of corresponding regions

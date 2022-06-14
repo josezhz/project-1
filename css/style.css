@@ -22,6 +22,8 @@ nav {
     background-color: white;
     border: 4px solid;
     border-right: 8px solid;
+    display: flex;
+    flex-direction: column;
     /* display: none; */
 }
 #nav-map {
@@ -74,8 +76,6 @@ nav {
 }
 
 .nav-label {
-    /* padding: 8px 16px; */
-    /* padding-bottom: 4px; */
     width: fit-content;
     background-color: var(--green);
     color: white;
@@ -135,6 +135,10 @@ nav {
 #btn-search {
     font-size: larger;
     font-weight: 700;
+    border: 3px solid;
+}
+
+#btn-home {
     border: 3px solid;
 }
 

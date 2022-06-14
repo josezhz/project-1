@@ -24,11 +24,11 @@
 
         <div class="container d-flex mt-3">
             <input type="radio" class="btn-check" name="display" id="btnMap">
-            <a href="/html/map.html" id="btn-map-on" class="btn btn-outline-light btn-map" for="btnMap">
+            <a href="map.html" id="btn-map-on" class="btn btn-outline-light btn-map">
                 <i class="fi fi-ss-map-marker ms-2 me-1"></i>
             </a>
             <input type="radio" class="btn-check" name="display" id="btnChart">
-            <a href="/html/chart.html" id="btn-chart-off" class="btn btn-outline-light btn-chart" for="btnChart">
+            <a href="chart.html" id="btn-chart-off" class="btn btn-outline-light btn-chart">
                 <i class="fi fi-br-chart-histogram ms-1 me-2"></i>
             </a>
         </div>
@@ -72,6 +72,11 @@
             <button class="btn btn-outline-success rounded-pill" id="btn-search">Search</button>
         </div>
 
+        <div class="container mt-auto mb-3 d-flex">
+            <a href="../" id="btn-home" class="btn btn-outline-success rounded-pill ms-auto">
+                <i class="fi fi-sr-home"></i>
+            </a>
+        </div>
     </nav>
 
     <div id="map" class="container-fluid">
@@ -92,7 +97,6 @@
             <div style="font-size: 20px;">No results for <span id="country-with-no-results"></span></div>
         </div>
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
         integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="

@@ -26,18 +26,22 @@ body {
     color: silver
 }
 
+.container-nav {
+    position: absolute;
+    left: 0;
+    z-index: 1001;
+    transition: left .5s;
+}
+.container-nav.hide {
+    left: -290px;
+}
 nav {
-    min-width: 290px;
-    height: 100vh;
+    width: 290px;
+    min-height: 100vh;
     background-color: rgba(255, 255, 255, 0.7);
     border: 4px solid;
     border-right: 8px solid;
     display: flex;
-    flex-direction: column;
-    /* display: none; */
-    position: absolute;
-    left: 0;
-    z-index: 1001;
 }
 
 #map {
@@ -157,6 +161,14 @@ nav {
 .btn-outline-purple:hover {
     color: white;
     background-color: var(--purple);
+}
+
+#nav-toggle {
+    font-size: 200%;
+    border-left: 0;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 #map {

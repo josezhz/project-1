@@ -258,3 +258,9 @@ document.querySelector('#btn-search').addEventListener('click', async function (
         document.querySelector('#search-by-uni').value = ""
     })
 })
+
+document.querySelector('#nav-toggle').addEventListener('click', function () {
+    document.querySelector('.container-nav').classList.toggle('hide')
+    document.querySelector('.container-nav-toggle').classList.toggle('dropstart')
+    document.querySelector('.container-nav-toggle').classList.toggle('dropstend')
+})

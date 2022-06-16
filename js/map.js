@@ -169,17 +169,19 @@ document.querySelector('#btn-search').addEventListener('click', async function (
             social_sciences_and_management: "SOCIAL SCIENCES & MANAGEMENT"
         }
         marker.bindPopup(`
-            <div class="d-flex">
-                ${imgElementSubject}
-                <span class="text-success align-self-end ms-1" style="font-family: 'Verdana';">${subjectName[subject]}</span>
+            <div style="width: 270px;">
+                <div class="d-flex">
+                    ${imgElementSubject}
+                    <span class="text-success align-self-end ms-1" style="font-family: 'Verdana';">${subjectName[subject]}</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="align-self-end" style="font-family: 'Verdana';">#<span class="fs-5">${rank}</span></div>
+                    <div class="d-flex"><span class="align-self-end me-1">${country}</span>${imgElementFlag}</div>
+                </div>
+                <hr class="mt-1 mb-1 p-1 bg-success rounded-pill">
+                <h5 style="font-family: 'Verdana'; font-weight: 500;">${name}</h5>
+                <div class="w-100" id="popup-chart-${rank}"></div>
             </div>
-            <div class="d-flex justify-content-between">
-                <div class="align-self-end" style="font-family: 'Verdana';">#<span class="fs-5">${rank}</span></div>
-                <div class="d-flex"><span class="align-self-end me-1">${country}</span>${imgElementFlag}</div>
-            </div>
-            <hr class="mt-1 mb-1 p-1 bg-success rounded-pill">
-            <h5 style="font-family: 'Verdana'; font-weight: 500;">${name}</h5>
-            <div id="popup-chart-${rank}" style="width: 300px"></div>
         `)
 
         // generate popup chart
@@ -196,7 +198,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
                 }],
                 chart: {
                     type: 'bar',
-                    height: 185
+                    height: 167
                 },
                 title: {
                     text: 'Scores',

@@ -9,44 +9,77 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
         integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
         crossorigin="" />
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel="stylesheet" href="../css/style.css">
     <title>Hello, world!</title>
 </head>
 
 <body>
-    <nav id="nav-chart">
+    <nav class="border-purple">
 
         <div class="container d-flex mt-3">
             <input type="radio" class="btn-check" name="display" id="btnMap">
-            <a href="map.html" id="btn-map-off" class="btn btn-outline-light btn-map" for="btnMap">
+            <a href="map.html" id="btn-map-off" class="btn btn-outline-light btn-map">
                 <i class="fi fi-ss-map-marker ms-2 me-1"></i>
             </a>
             <input type="radio" class="btn-check" name="display" id="btnChart">
-            <a href="chart.html" id="btn-chart-on" class="btn btn-outline-light btn-chart" for="btnChart">
+            <a href="chart.html" id="btn-chart-on" class="btn btn-outline-light btn-chart">
                 <i class="fi fi-br-chart-histogram ms-1 me-2"></i>
             </a>
         </div>
 
-        <div class="container input-group">
-            <label class="input-group-text" id="label-subject" for="select-subject">Subject:</label>
-            <select class="form-select" aria-label="Default select example" id="select-subject">
-                <option value="1" selected>Overall</option>
-                <option value="2">Arts & Humanities</option>
-                <option value="3">Engineering & Technology</option>
-                <option value="4">Life Sciences & Medicine</option>
-                <option value="5">Natural Sciences</option>
-                <option value="6">Social Sciences & Management</option>
+        <div class="container mt-3 d-block">
+            <label class="input-group-text nav-label bg-purple" for="select-subject">
+                <i class="fi fi-bs-book-alt me-2"></i>Subject:
+            </label>
+            <select class="form-select text-success border-success" id="select-subject">
+                <option value="overall" selected>Overall</option>
+                <option value="arts_and_humanities">Arts & Humanities</option>
+                <option value="engineering_and_technology">Engineering & Technology</option>
+                <option value="life_sciences_and_medicine">Life Sciences & Medicine</option>
+                <option value="natural_sciences">Natural Sciences</option>
+                <option value="social_sciences_and_management">Social Sciences & Management</option>
             </select>
-            <!-- <input type="button" class="btn btn-success rounded-pill" id="btnSubject" value="Search"> -->
         </div>
 
+        <div class="container mt-3">
+            <label class="input-group-text nav-label bg-purple">
+                <i class="fi fi-bs-hastag me-2"></i>Rank:
+            </label>
+        </div>
+        <div class="container input-group">
+            <label class="input-group-text label-rank-from bg-purple" for="select-rank-s">From</label>
+            <select class="form-select text-success border-success" id="select-rank-s"></select>
+            <label class="input-group-text label-rank-to bg-purple" for="select-rank-e">to</label>
+            <select class="form-select text-success border-success" id="select-rank-e"></select>
+        </div>
+
+        <div class="container mt-3 d-block">
+            <label class="input-group-text nav-label bg-purple" for="select-country">
+                <i class="fi fi-rr-globe me-2"></i>Country:
+            </label>
+            <select class="form-select text-success border-success" id="select-country">
+                <option value="" selected>All</option>
+            </select>
+        </div>
+
+        <div class="container mt-3">
+            <button class="btn btn-outline-secondary btn-outline-purple rounded-pill" id="btn-search">Search</button>
+        </div>
+
+        <div class="container mt-auto mb-3 d-flex">
+            <a href="../" id="btn-home" class="btn btn-outline-secondary btn-outline-purple rounded-pill ms-auto">
+                <i class="fi fi-sr-home"></i>
+            </a>
+        </div>
     </nav>
 
-    <div id="chart" class="container-fluid">
-
-    </div>
+    <div class="container-fluid"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
         integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
@@ -58,7 +91,6 @@
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
         integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
         crossorigin=""></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/chart.js"></script>
 </body>
-
 </html>

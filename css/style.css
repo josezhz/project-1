@@ -11,6 +11,16 @@
     --cyan: #0dcaf0;
 }
 
+.purple {
+    color: var(--purple);
+}
+.bg-purple {
+    background-color: var(--purple);
+}
+.border-purple {
+    border-color: var(--purple);
+}
+
 body {
     display: flex;
     color: silver
@@ -25,12 +35,6 @@ nav {
     display: flex;
     flex-direction: column;
     /* display: none; */
-}
-#nav-map {
-    border-color: var(--green);
-}
-#nav-chart {
-    border-color: var(--purple);
 }
 
 #map {
@@ -76,8 +80,8 @@ nav {
 }
 
 .nav-label {
+    padding-bottom: 0;
     width: fit-content;
-    background-color: var(--green);
     color: white;
     font-size: large;
     font-weight: 500;
@@ -88,9 +92,8 @@ nav {
 
 #select-subject, #select-country {
     margin-left: auto;
-    color: var(--purple);
     font-weight: 500;
-    border: 3px solid var(--purple);
+    border: 3px solid;
     border-radius: 50rem !important;
     border-top-left-radius: 0 !important;
 }
@@ -101,7 +104,6 @@ nav {
 
 .label-rank-from {
     width: fit-content;
-    background-color: var(--purple);
     color: white;
     font-weight: 500;
     border: 0;
@@ -110,23 +112,20 @@ nav {
 }
 .label-rank-to {
     width: fit-content;
-    background-color: var(--purple);
     color: white;
     font-weight: 400;
     border: 0;
 }
 #select-rank-s {
     margin-left: auto;
-    color: var(--purple);
     font-weight: 500;
-    border: 3px solid var(--purple);
+    border: 3px solid;
     border-radius: 0 !important;
 }
 #select-rank-e {
     margin-left: auto;
-    color: var(--purple);
     font-weight: 500;
-    border: 3px solid var(--purple);
+    border: 3px solid;
     border-radius: 50rem !important;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
@@ -137,9 +136,24 @@ nav {
     font-weight: 700;
     border: 3px solid;
 }
-
 #btn-home {
     border: 3px solid;
+}
+.btn-outline-green {
+    color: var(--green);
+    border-color: var(--green);
+}
+.btn-outline-green:hover {
+    color: white;
+    background-color: var(--green);
+}
+.btn-outline-purple {
+    color: var(--purple);
+    border-color: var(--purple);
+}
+.btn-outline-purple:hover {
+    color: white;
+    background-color: var(--purple);
 }
 
 #container-search-by-uni, #container-no-results {

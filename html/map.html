@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <nav id="nav-map">
+    <nav class="border-success">
 
         <div class="container d-flex mt-3">
             <input type="radio" class="btn-check" name="display" id="btnMap">
@@ -34,10 +34,10 @@
         </div>
 
         <div class="container mt-3 d-block">
-            <label class="input-group-text nav-label" for="select-subject">
+            <label class="input-group-text nav-label bg-success" for="select-subject">
                 <i class="fi fi-bs-book-alt me-2"></i>Subject:
             </label>
-            <select class="form-select" id="select-subject">
+            <select class="form-select purple border-purple" id="select-subject">
                 <option value="overall" selected>Overall</option>
                 <option value="arts_and_humanities">Arts & Humanities</option>
                 <option value="engineering_and_technology">Engineering & Technology</option>
@@ -48,32 +48,32 @@
         </div>
 
         <div class="container mt-3">
-            <label class="input-group-text nav-label">
+            <label class="input-group-text nav-label bg-success">
                 <i class="fi fi-bs-hastag me-2"></i>Rank:
             </label>
         </div>
         <div class="container input-group">
-            <label class="input-group-text label-rank-from" for="select-rank-s">From</label>
-            <select class="form-select" id="select-rank-s"></select>
-            <label class="input-group-text label-rank-to" for="select-rank-e">to</label>
-            <select class="form-select" id="select-rank-e"></select>
+            <label class="input-group-text label-rank-from bg-success" for="select-rank-s">From</label>
+            <select class="form-select purple border-purple" id="select-rank-s"></select>
+            <label class="input-group-text label-rank-to bg-success" for="select-rank-e">to</label>
+            <select class="form-select purple border-purple" id="select-rank-e"></select>
         </div>
 
         <div class="container mt-3 d-block">
-            <label class="input-group-text nav-label" for="select-country">
+            <label class="input-group-text nav-label bg-success" for="select-country">
                 <i class="fi fi-rr-globe me-2"></i>Country:
             </label>
-            <select class="form-select" id="select-country">
+            <select class="form-select purple border-purple" id="select-country">
                 <option value="" selected>All</option>
             </select>
         </div>
 
         <div class="container mt-3">
-            <button class="btn btn-outline-success rounded-pill" id="btn-search">Search</button>
+            <button class="btn btn-outline-secondary btn-outline-green rounded-pill" id="btn-search">Search</button>
         </div>
 
         <div class="container mt-auto mb-3 d-flex">
-            <a href="../" id="btn-home" class="btn btn-outline-success rounded-pill ms-auto">
+            <a href="../" id="btn-home" class="btn btn-outline-secondary btn-outline-green rounded-pill msuccess">
                 <i class="fi fi-sr-home"></i>
             </a>
         </div>
@@ -108,7 +108,7 @@
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
         integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
         crossorigin=""></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/map.js"></script>
 </body>
 
 </html>

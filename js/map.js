@@ -3,13 +3,15 @@ function createMap() {
     let northEast = L.latLng(90, 200)
     let bounds = L.latLngBounds(southWest, northEast)
     let map = L.map('map', {
-        maxBounds: bounds
+        maxBounds: bounds,
+        zoomControl: false
     }).setView([20, 20], 2)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         minZoom: 2,
         attribution: '© OpenStreetMap'
     }).addTo(map)
+    let zoomControl = L.control.zoom({position: 'bottomright'}).addTo(map)
     return map
 }
 

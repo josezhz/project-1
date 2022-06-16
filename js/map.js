@@ -1,3 +1,10 @@
+let containerNav = document.querySelector('.container-nav')
+function toggleNav() {
+    containerNav.classList.toggle('hide')
+    document.querySelector('.container-nav-toggle').classList.toggle('dropstart')
+    document.querySelector('.container-nav-toggle').classList.toggle('dropstend')
+}
+
 function createMap() {
     let southWest = L.latLng(-90, -160)
     let northEast = L.latLng(90, 200)
@@ -62,6 +69,7 @@ for (let i = 1; i <= 50; i++) {
 })()
 
 document.querySelector('#btn-search').addEventListener('click', async function () {
+    toggleNav()
     for (eachLayer of allLayers) {
         eachLayer.clearLayers()
     }
@@ -256,11 +264,10 @@ document.querySelector('#btn-search').addEventListener('click', async function (
             }
         }
         document.querySelector('#search-by-uni').value = ""
+        if (!containerNav.classList.contains('hide')) {
+            toggleNav()
+        }
     })
 })
 
-document.querySelector('#nav-toggle').addEventListener('click', function () {
-    document.querySelector('.container-nav').classList.toggle('hide')
-    document.querySelector('.container-nav-toggle').classList.toggle('dropstart')
-    document.querySelector('.container-nav-toggle').classList.toggle('dropstend')
-})
+document.querySelector('#nav-toggle').addEventListener('click', toggleNav)

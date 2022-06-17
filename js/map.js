@@ -6,13 +6,13 @@ function toggleNav() {
 }
 
 function createMap() {
-    let southWest = L.latLng(-90, -160)
+    let southWest = L.latLng(-90, -250)
     let northEast = L.latLng(90, 200)
     let bounds = L.latLngBounds(southWest, northEast)
     let map = L.map('map', {
         maxBounds: bounds,
         zoomControl: false
-    }).setView([20, 20], 2)
+    }).setView([20, 20], 3)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         minZoom: 2,
@@ -69,12 +69,14 @@ for (let i = 1; i <= 50; i++) {
 })()
 
 document.querySelector('#btn-search').addEventListener('click', async function () {
-    toggleNav()
+    
+    if (window.innerWidth < 992) {toggleNav()}
+
     for (eachLayer of allLayers) {
         eachLayer.clearLayers()
     }
 
-    map.flyTo([20, 20], 2)
+    map.flyTo([20, 20], 3)
     markers = []
 
     let subject = document.querySelector('#select-subject').value
@@ -266,7 +268,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
             }
         }
         document.querySelector('#search-by-uni').value = ""
-        if (!containerNav.classList.contains('hide')) {
+        if (!containerNav.classList.contains('hide') && window.innerWidth < 992) {
             toggleNav()
         }
     })

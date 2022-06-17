@@ -283,13 +283,11 @@ document.querySelector('#btn-search').addEventListener('click', async function (
 
 document.querySelector('#nav-toggle').addEventListener('click', toggleNav)
 
-// console.log(document.querySelector('.leaflet-control-layers'))
-
 let regionsContainer = document.querySelector('.leaflet-control-layers-overlays')
+console.log(regionsContainer)
 regionsContainer.classList.add('form-switch', 'form-check')
 let regions = document.querySelectorAll('.leaflet-control-layers-selector')
 for (region of regions) {
     region.classList.add('form-check-input')
 }
-console.log(document.querySelector('#map'))
-console.log(document.querySelector('div.leaflet-top.leaflet-right'))
+console.log(document.querySelector('.leaflet-control-zoom-in'))

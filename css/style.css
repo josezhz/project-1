@@ -190,3 +190,12 @@ nav {
     margin-top: 10px;
     opacity: 0.8;
 }
+
+div.leaflet-top.leaflet-right {
+    position: absolute;
+    top: 50px;
+}
+
+.leaflet-control-layers-toggle {
+    background-image: url(../images/planet-earth.png) !important;
+}

@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="d-flex container-nav hide">
+    <div class="d-flex container-nav">
 
         <nav class="d-flex flex-column border-success">
             <div class="container mt-3 d-flex">
@@ -81,7 +81,7 @@
             </div>
         </nav>
 
-        <div class="container-nav-toggle d-flex align-items-center dropend">
+        <div class="container-nav-toggle d-flex align-items-center dropstart">
             <button class="btn-sm dropdown-toggle" id="nav-toggle"></button>
         </div>
 
@@ -89,9 +89,9 @@
 
     <div id="map" class="container-fluid d-flex">
         <div class="input-group" id="container-search-by-uni">
-            <input class="form-control" list="unis" id="search-by-uni" placeholder="Search by university">
+            <input class="form-control form-control-lg" list="unis" id="search-by-uni" placeholder="Search by university">
             <datalist id="unis"></datalist>
-            <button class="btn btn-success pb-0" type="button" id="btn-search-by-uni">
+            <button class="btn btn-success btn-lg pb-0" type="button" id="btn-search-by-uni">
                 <i class="fi fi-br-search"></i>
             </button>
         </div>

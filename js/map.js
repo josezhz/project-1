@@ -1,8 +1,8 @@
 let containerNav = document.querySelector('.container-nav')
 function toggleNav() {
     containerNav.classList.toggle('hide')
+    document.querySelector('.container-nav-toggle').classList.toggle('dropend')
     document.querySelector('.container-nav-toggle').classList.toggle('dropstart')
-    document.querySelector('.container-nav-toggle').classList.toggle('dropstend')
 }
 
 function createMap() {
@@ -18,7 +18,7 @@ function createMap() {
         minZoom: 2,
         attribution: '© OpenStreetMap'
     }).addTo(map)
-    let zoomControl = L.control.zoom({position: 'bottomright'}).addTo(map)
+    let zoomControl = L.control.zoom({ position: 'bottomright' }).addTo(map)
     return map
 }
 
@@ -36,7 +36,7 @@ let overlayMaps = {
     "North America": north_americaLayer,
     "Oceania": oceaniaLayer
 }
-let layerControl = L.control.layers(null, overlayMaps).addTo(map)
+let layerControl = L.control.layers(null, overlayMaps, { position: 'topright' }).addTo(map)
 
 // generate options for rank filter
 let selectRankS = document.querySelector('#select-rank-s')
@@ -273,3 +273,14 @@ document.querySelector('#btn-search').addEventListener('click', async function (
 })
 
 document.querySelector('#nav-toggle').addEventListener('click', toggleNav)
+
+// console.log(document.querySelector('.leaflet-control-layers'))
+
+let regionsContainer = document.querySelector('.leaflet-control-layers-overlays')
+regionsContainer.classList.add('form-switch', 'form-check')
+let regions = document.querySelectorAll('.leaflet-control-layers-selector')
+for (region of regions) {
+    region.classList.add('form-check-input')
+}
+console.log(document.querySelector('#map'))
+console.log(document.querySelector('div.leaflet-top.leaflet-right'))

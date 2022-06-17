@@ -4,6 +4,7 @@ function toggleNav() {
     document.querySelector('.container-nav-toggle').classList.toggle('dropend')
     document.querySelector('.container-nav-toggle').classList.toggle('dropstart')
 }
+document.querySelector('#nav-toggle').addEventListener('click', toggleNav)
 
 let initialLatLng = [20, 20]
 if (window.innerWidth < 576) {
@@ -280,8 +281,6 @@ document.querySelector('#btn-search').addEventListener('click', async function (
         }
     })
 })
-
-document.querySelector('#nav-toggle').addEventListener('click', toggleNav)
 
 let regionsContainer = document.querySelector('.leaflet-control-layers-overlays')
 console.log(regionsContainer)

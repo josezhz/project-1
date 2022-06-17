@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="d-flex container-nav">
+    <div class="d-flex align-items-center container-nav">
 
         <nav class="d-flex flex-column border-success">
             <div class="container mt-3 d-flex">
@@ -30,7 +30,7 @@
                     <i class="fi fi-ss-map-marker ms-2 me-1"></i>
                 </a>
                 <input type="radio" class="btn-check" name="display" id="btnChart">
-                <a href="chart.html" id="btn-chart-off" class="btn btn-outline-light btn-chart">
+                <a href="chart.html" id="btn-chart-off" class="btn btn-outline-light btn-chart bg-none">
                     <i class="fi fi-br-chart-histogram ms-1 me-2"></i>
                 </a>
             </div>
@@ -39,7 +39,7 @@
                 <label class="input-group-text nav-label bg-success" for="select-subject">
                     <i class="fi fi-bs-book-alt me-2"></i>Subject:
                 </label>
-                <select class="form-select purple border-purple" id="select-subject">
+                <select class="form-select purple border-purple bg-none" id="select-subject">
                     <option value="overall" selected>Overall</option>
                     <option value="arts_and_humanities">Arts & Humanities</option>
                     <option value="engineering_and_technology">Engineering & Technology</option>
@@ -56,16 +56,16 @@
             </div>
             <div class="container input-group">
                 <label class="input-group-text label-rank-from bg-success" for="select-rank-s">From</label>
-                <select class="form-select purple border-purple" id="select-rank-s"></select>
+                <select class="form-select purple border-purple bg-none" id="select-rank-s"></select>
                 <label class="input-group-text label-rank-to bg-success" for="select-rank-e">to</label>
-                <select class="form-select purple border-purple" id="select-rank-e"></select>
+                <select class="form-select purple border-purple bg-none" id="select-rank-e"></select>
             </div>
 
             <div class="container mt-3 d-block">
                 <label class="input-group-text nav-label bg-success" for="select-country">
                     <i class="fi fi-rr-globe me-2"></i>Country:
                 </label>
-                <select class="form-select purple border-purple" id="select-country">
+                <select class="form-select purple border-purple bg-none" id="select-country">
                     <option value="" selected>All</option>
                 </select>
             </div>
@@ -89,12 +89,12 @@
 
     <div id="map" class="container-fluid d-flex">
         <div class="input-group" id="container-search-by-uni">
-            <label class="input-group-text btn-success pb-0" for="search-by-uni">
+            <label class="input-group-text btn-success btn-sm pb-0" for="search-by-uni">
                 <i class="fi fi-ss-school"></i>
             </label>
             <input class="form-control border-success" list="unis" id="search-by-uni" placeholder="Search by university">
             <datalist id="unis"></datalist>
-            <button class="btn btn-success pb-0" type="button" id="btn-search-by-uni">
+            <button class="btn btn-success btn-sm pb-0" type="button" id="btn-search-by-uni">
                 <i class="fi fi-br-search"></i>
             </button>
         </div>

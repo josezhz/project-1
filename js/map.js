@@ -5,6 +5,12 @@ function toggleNav() {
     document.querySelector('.container-nav-toggle').classList.toggle('dropstart')
 }
 
+let initialLatLng = [20, 20]
+if (window.innerWidth < 576) {
+    initialLatLng = [50, 0]
+} else if (window.innerWidth < 992) {
+    initialLatLng = [40, -45]
+}
 function createMap() {
     let southWest = L.latLng(-90, -250)
     let northEast = L.latLng(90, 200)
@@ -12,7 +18,8 @@ function createMap() {
     let map = L.map('map', {
         maxBounds: bounds,
         zoomControl: false
-    }).setView([20, 20], 3)
+    }).setView(initialLatLng, 3)
+    // .setView([20, 20], 3)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         minZoom: 2,
@@ -76,7 +83,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
         eachLayer.clearLayers()
     }
 
-    map.flyTo([20, 20], 3)
+    map.flyTo(initialLatLng, 3)
     markers = []
 
     let subject = document.querySelector('#select-subject').value

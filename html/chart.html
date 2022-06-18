@@ -17,6 +17,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/chart.css">
     <title>Hello, world!</title>
 </head>
 
@@ -26,7 +27,7 @@
         <nav class="d-flex flex-column border-purple">
             <div class="container mt-3 d-flex">
                 <input type="radio" class="btn-check" name="display" id="btnMap">
-                <a href="map.html" id="btn-map-off" class="btn btn-outline-light btn-map">
+                <a href="map.html" id="btn-map-off" class="btn btn-outline-light btn-map bg-none">
                     <i class="fi fi-ss-map-marker ms-2 me-1"></i>
                 </a>
                 <input type="radio" class="btn-check" name="display" id="btnChart">
@@ -39,7 +40,7 @@
                 <label class="input-group-text nav-label bg-purple" for="select-subject">
                     <i class="fi fi-bs-book-alt me-2"></i>Subject:
                 </label>
-                <select class="form-select purple border-success bg-none" id="select-subject">
+                <select class="form-select text-success border-success bg-none" id="select-subject">
                     <option value="overall" selected>Overall</option>
                     <option value="arts_and_humanities">Arts & Humanities</option>
                     <option value="engineering_and_technology">Engineering & Technology</option>
@@ -56,29 +57,27 @@
             </div>
             <div class="container input-group">
                 <label class="input-group-text label-rank-from bg-purple" for="select-rank-s">From</label>
-                <select class="form-select purple border-success bg-none" id="select-rank-s"></select>
+                <select class="form-select text-success border-success bg-none" id="select-rank-s"></select>
                 <label class="input-group-text label-rank-to bg-purple" for="select-rank-e">to</label>
-                <select class="form-select purple border-success bg-none" id="select-rank-e"></select>
+                <select class="form-select text-success border-success bg-none" id="select-rank-e"></select>
             </div>
 
             <div class="container mt-3 d-block">
                 <label class="input-group-text nav-label bg-purple" for="select-country">
                     <i class="fi fi-rr-globe me-2"></i>Country:
                 </label>
-                <select class="form-select purple border-success bg-none" id="select-country">
+                <select class="form-select text-success border-success bg-none" id="select-country">
                     <option value="" selected>All</option>
                 </select>
             </div>
 
-            <div class="container mt-5 d-flex">
-                <button class="btn btn-outline-secondary btn-outline-purple rounded-pill ms-auto"
-                    id="btn-search">Search</button>
-            </div>
-
             <div class="container mt-auto mb-3 d-flex">
-                <a href="../" id="btn-home" class="btn btn-outline-secondary btn-outline-purple rounded-pill ms-auto">
+                <a href="../" id="btn-home" class="btn btn-outline-secondary btn-outline-purple rounded-pill d-flex align-items-center">
                     <i class="fi fi-sr-home"></i>
                 </a>
+                <button class="btn btn-outline-secondary btn-outline-purple rounded-pill ms-auto" id="btn-search">
+                    Search
+                </button>
             </div>
         </nav>
 
@@ -87,6 +86,10 @@
         </div>
 
     </div>
+
+    <main class="main-chart">
+
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
         integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg=="
@@ -98,6 +101,7 @@
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
         integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
         crossorigin=""></script>
+    <script src="../js/utilities.js"></script>
     <script src="../js/chart.js"></script>
 </body>
 

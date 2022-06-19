@@ -33,3 +33,9 @@ nav {
     color: white !important;
     background-color: var(--purple) !important;
 }
+
+main {
+    height: calc(100vh - 84px);
+    margin-top: 58px;
+    margin-bottom: 26px;
+}

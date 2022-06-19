@@ -25,6 +25,11 @@
     <div class="d-flex align-items-center container-nav">
 
         <nav class="d-flex flex-column border-purple">
+
+            <div class="container mt-3">
+                <img src="../images/logo.png" width="100%">
+            </div>
+
             <div class="container mt-3 d-flex">
                 <input type="radio" class="btn-check" name="display" id="btnMap">
                 <a href="map.html" class="btn btn-outline-light btn-map bg-none">
@@ -72,7 +77,8 @@
             </div>
 
             <div class="container mt-auto mb-3 d-flex">
-                <a href="../" id="btn-home" class="btn btn-outline-secondary btn-outline-purple rounded-pill d-flex align-items-center">
+                <a href="../" id="btn-home"
+                    class="btn btn-outline-secondary btn-outline-purple rounded-pill d-flex align-items-center">
                     <i class="fi fi-sr-home"></i>
                 </a>
                 <button class="btn btn-outline-secondary btn-outline-purple rounded-pill ms-auto" id="btn-search">
@@ -87,8 +93,23 @@
 
     </div>
 
-    <main class="" id="main-chart">
-
+    <main class="container border">
+        <div class="row bg-light">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
+        <div class="row bg-light mt-3">
+            <div class="col-4">
+                One of two columns
+            </div>
+            <div class="col-4">
+                One of two columns
+            </div>
+        </div>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"
@@ -104,6 +125,5 @@
     <script src="../js/utilities.js"></script>
     <script src="../js/chart.js"></script>
 </body>
-
 
 </html>

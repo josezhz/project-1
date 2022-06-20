@@ -86,7 +86,6 @@ document.querySelector('#btn-search').addEventListener('click', async function (
   for (let eachUni = rankS - 1; eachUni < rankE; eachUni++) {
     let divRow = document.createElement('div')
     divRow.className = 'row chart-row'
-    chartResults.appendChild(divRow)
 
     let name = rankings[eachUni].Institution
     let country = rankings[eachUni].Location
@@ -182,5 +181,8 @@ document.querySelector('#btn-search').addEventListener('click', async function (
       colors: ['#dc3545', '#ffc107', '#198754', '#0d6efd']
     }
     new ApexCharts(divChart, options).render()
+    if (!countrySelected || countrySelected == country) {
+      chartResults.appendChild(divRow)
+    }
   }
 })

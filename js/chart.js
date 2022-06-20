@@ -51,7 +51,9 @@ var options1 = {
   labels: ['ACADEMIC', 'EMPLOYER', 'CITATIONS', 'H-INDEX'],
   colors: ['#dc3545', '#ffc107', '#198754', '#0d6efd']
 };
-new ApexCharts(document.querySelector("#chart-subject-x"), options1).render();
+new ApexCharts(document.querySelector("#chart-radial-bar-subject-x"), options1).render();
+
+
 
 document.querySelector('#btn-search').addEventListener('click', async function () {
   toggleNav()
@@ -89,6 +91,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
     let name = rankings[eachUni].Institution
     let country = rankings[eachUni].Location
     let rank = rankings[eachUni][2021]
+    let rank2020 = rankings[eachUni][2020]
     let countryCode = countryCodes[country]
 
     let divRank = document.createElement('div')

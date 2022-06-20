@@ -16,6 +16,9 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/chart.css">
     <title>Hello, world!</title>
@@ -43,7 +46,7 @@
 
             <div class="container mt-3 d-block">
                 <label class="input-group-text nav-label bg-purple" for="select-subject">
-                    <i class="fi fi-bs-book-alt me-2"></i>Subject:
+                    <img src="../images/ui_logos/subject.png" class="h-100 me-1">SUBJECT:
                 </label>
                 <select class="form-select text-success border-success bg-none" id="select-subject">
                     <option value="overall" selected>Overall</option>
@@ -57,7 +60,7 @@
 
             <div class="container mt-3">
                 <label class="input-group-text nav-label bg-purple">
-                    <i class="fi fi-bs-hastag me-2"></i>Rank:
+                    <img src="../images/ui_logos/rank.png" class="h-100 me-1">RANK:
                 </label>
             </div>
             <div class="container input-group">
@@ -69,7 +72,7 @@
 
             <div class="container mt-3 d-block">
                 <label class="input-group-text nav-label bg-purple" for="select-country">
-                    <i class="fi fi-rr-globe me-2"></i>Country:
+                    <img src="../images/ui_logos/country.png" class="h-100 me-1">COUNTRY:
                 </label>
                 <select class="form-select text-success border-success bg-none" id="select-country">
                     <option value="" selected>All</option>
@@ -78,7 +81,7 @@
 
             <div class="container mt-auto mb-3 d-flex">
                 <a href="../" id="btn-home"
-                    class="btn btn-outline-secondary btn-outline-purple rounded-pill d-flex align-items-center">
+                    class="btn btn-outline-secondary btn-outline-purple rounded-pill d-flex align-items-center pb-0">
                     <i class="fi fi-sr-home"></i>
                 </a>
                 <button class="btn btn-outline-secondary btn-outline-purple rounded-pill ms-auto" id="btn-search">
@@ -93,22 +96,56 @@
 
     </div>
 
-    <main class="container border">
-        <div class="row bg-light">
-            <div class="col-4">
-                One of two columns
+    <main class="container">
+
+        <div class="row bg-light sticky-top" id="chart-header">
+            <div class="col-1">
+                <img src="../images/ui_logos/rank.png" style="max-width: 100%; max-height: 30px;">
             </div>
-            <div class="col-4">
-                One of two columns
+            <div class="col-7 col-md-4">
+                University
+            </div>
+            <div class="col-4 col-md-2">
+                Country
+            </div>
+            <div class="d-none d-md-flex col-5">
+                Scores
             </div>
         </div>
-        <div class="row bg-light mt-3">
-            <div class="col-4">
-                One of two columns
+
+        <div class="alert alert-danger align-items-center justify-content-center pt-3 pb-3" id="container-no-results" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img"
+                aria-label="Warning:">
+                <path
+                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+            <div style="font-size: 20px;">No results for <span id="country-with-no-results"></span></div>
+        </div>
+
+        <div id="chart-results">
+            <!-- example -->
+            <!--
+            <div class="row chart-row">
+                <div class="col-1 chart-rank">
+                    <input type="checkbox" class="btn-check" name="compare" id="subject-rank-x">
+                    <label class="btn btn-outline-success" for="subject-rank-x">1</label>
+                </div>
+                <div class="col-7 col-md-4 chart-uni">
+                    Nanyang Technological University, Singapore (NTU)
+                </div>
+                <div class="col-4 col-md-2 chart-country">
+                    <img class="chart-flag" src="https://countryflagsapi.com/png/sg">
+                    Singapore
+                </div>
+                <div class="col-12 d-md-none score-header-sm">
+                    Scores
+                </div>
+                <div class="col-12 col-md-5">
+                    <div id="chart-subject-x"></div>
+                </div>
             </div>
-            <div class="col-4">
-                One of two columns
-            </div>
+            -->
         </div>
     </main>
 

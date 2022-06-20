@@ -12,7 +12,6 @@ function createMap() {
         maxBounds: bounds,
         zoomControl: false
     }).setView(initialLatLng, 3)
-    // .setView([20, 20], 3)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         minZoom: 2,
@@ -133,7 +132,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
         markers.push(marker)
 
         // generate popup
-        let imgElementFlag = `<img src="https://countryflagsapi.com/png/${countryCode}" class="border rounded" height="30px"/>`
+        let imgElementFlag = `<img src="https://countryflagsapi.com/png/${countryCode}" class="border rounded" height="25px"/>`
         let imgElementSubject = `<img src="../images/subject_logos/${subject}.png" height="30px">`
         let subjectName = {
             overall: "OVERALL",
@@ -144,17 +143,17 @@ document.querySelector('#btn-search').addEventListener('click', async function (
             social_sciences_and_management: "SOCIAL SCIENCES & MANAGEMENT"
         }
         marker.bindPopup(`
-            <div style="width: 270px;">
+            <div style="width: 250px;">
                 <div class="d-flex">
                     ${imgElementSubject}
-                    <span class="text-success align-self-end ms-1" style="font-family: 'Verdana';">${subjectName[subject]}</span>
+                    <span class="text-success align-self-end ms-1 fs-light" style="font-family: 'Acme', sans-serif;">${subjectName[subject]}</span>
                 </div>
                 <div class="d-flex justify-content-between">
-                    <div class="align-self-end" style="font-family: 'Verdana';">#<span class="fs-5">${rank}</span></div>
-                    <div class="d-flex"><span class="align-self-end me-1">${country}</span>${imgElementFlag}</div>
+                    <div class="align-self-end">#<span class="fs-5">${rank}</span></div>
+                    <div class="d-flex"><span class="align-self-end me-1" style="font-family: 'Acme', sans-serif;">${country}</span>${imgElementFlag}</div>
                 </div>
                 <hr class="mt-1 mb-1 p-1 bg-success rounded-pill">
-                <h5 style="font-family: 'Verdana'; font-weight: 500;">${name}</h5>
+                <h5 style="font-family: 'Acme', sans-serif;">${name}</h5>
                 <div class="w-100" id="popup-chart-${rank}"></div>
             </div>
         `)
@@ -173,7 +172,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
                 }],
                 chart: {
                     type: 'bar',
-                    height: 167
+                    height: 148
                 },
                 title: {
                     text: 'Scores',
@@ -185,7 +184,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
                     style: {
                         fontSize: '16px',
                         fontWeight: 400,
-                        fontFamily: 'Verdana',
+                        fontFamily: "'Acme', sans-serif",
                         color: '#198754',
                     },
                 },

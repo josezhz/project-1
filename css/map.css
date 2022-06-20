@@ -55,7 +55,7 @@ div.leaflet-top.leaflet-right {
 }
 
 .leaflet-control-layers-toggle {
-    background-image: url(../images/planet_earth.png) !important;
+    background-image: url(../images/ui_logos/region.png) !important;
 }
 .leaflet-control-layers {
     background-color: rgba(255, 255, 255, 0.7);
@@ -69,7 +69,7 @@ div.leaflet-top.leaflet-right {
     background-color: rgba(255, 255, 255, 0.7) !important;
 }
 .leaflet-control-zoom-in span, .leaflet-control-zoom-out span {
-    color: var(--green) !important;
+    color: var(--purple) !important;
     font-size: xx-large;
 }
 .leaflet-control-zoom, .leaflet-control-zoom-in {

@@ -35,3 +35,29 @@ async function createCountryOptions() {
         document.querySelector('#select-country').appendChild(optionElementCountry)
     }
 }
+
+let weightings = {
+    overall: {
+        a: 50, e: 10, c: 20, h: 20
+    },
+    arts_and_humanities: {
+        a: 60, e: 20, c: 10, h: 10
+    },
+    engineering_and_technology: {
+        a: 40, e: 30, c: 15, h: 15
+    },
+    life_sciences_and_medicine: {
+        a: 40, e: 10, c: 25, h: 25
+    },
+    natural_sciences: {
+        a: 40, e: 20, c: 20, h: 20
+    },
+    social_sciences_and_management: {
+        a: 50, e: 30, c: 10, h: 10
+    }
+}
+
+function calculateOverallScore(a, e, c, h, subject) {
+    let o = (a * weightings[subject].a + e * weightings[subject].e + c * weightings[subject].c + h * weightings[subject].h) / 100
+    return o.toFixed(1)
+}

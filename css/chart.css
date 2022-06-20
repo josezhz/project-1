@@ -14,6 +14,7 @@
 body {
     background-color: rgb(0, 0, 0);
     background-image: url(../images/textures/subtle-grey.png);
+    flex-direction: column;
 }
 
 nav {
@@ -35,7 +36,85 @@ nav {
 }
 
 main {
-    height: calc(100vh - 84px);
-    margin-top: 58px;
-    margin-bottom: 26px;
+    height: calc(100vh - 52px);
+    max-width: calc(100vw - 16px);
+    margin-top: 26px;
+    overflow-y: scroll;
+}
+
+#chart-header {
+    z-index: 1;
+    height: 32px;
+}
+#chart-header div {
+    height: 100%;
+    color: white;
+    background-color: var(--purple);
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    font-size: large;
+}
+
+#container-no-results {
+    display: none;
+    opacity: 0.9;
+}
+
+.chart-row {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: auto;
+}
+.chart-row>div {
+    border: 1px solid lightgray;
+    border-bottom: 4px solid var(--purple);
+}
+.chart-rank{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.chart-rank label {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+.chart-rank label:hover {
+    color: var(--green);
+    background-color: rgba(25, 135, 84, 0.2);
+}
+.chart-uni {
+    display: flex;
+    align-items: center;
+}
+.chart-country {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.chart-flag {
+    max-height: 30px;
+    max-width: 100%;
+}
+.score-header-sm {
+    height: 32px;
+    color: white;
+    background-color: var(--purple);
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    font-size: large;
 }

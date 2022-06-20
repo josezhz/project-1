@@ -90,6 +90,9 @@ document.querySelector('#btn-search').addEventListener('click', async function (
     let rank = rankings[eachUni][2021]
     let rank2020 = rankings[eachUni][2020]
     let countryCode = countryCodes[country]
+    if (!countrySelected || countrySelected == country) {
+      chartResults.appendChild(divRow)
+    }
 
     let divRank = document.createElement('div')
     divRank.className = 'col-1 chart-rank'
@@ -179,8 +182,5 @@ document.querySelector('#btn-search').addEventListener('click', async function (
       colors: ['#dc3545', '#ffc107', '#198754', '#0d6efd']
     }
     new ApexCharts(divChart, options).render()
-    if (!countrySelected || countrySelected == country) {
-      chartResults.appendChild(divRow)
-    }
   }
 })

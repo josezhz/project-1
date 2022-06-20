@@ -21,6 +21,7 @@ nav {
 #map {
     height: 100vh;
     justify-content: center;
+    font-family: 'Acme', sans-serif;
 }
 
 .btn-map {
@@ -37,7 +38,7 @@ nav {
     background-color: var(--purple) !important;
 }
 
-#container-search-by-uni, #container-no-results {
+#container-search-by-uni, #alert-invalid-rank, #alert-no-results {
     z-index: 699;
     display: none;
     width: fit-content;

@@ -37,7 +37,6 @@ nav {
 
 main {
     height: auto;
-    /* max-width: calc(100vw - 16px); */
     width: 100%;
 }
 
@@ -65,7 +64,7 @@ main {
     padding-left: 8px;
 }
 
-#container-no-results {
+#alert-invalid-rank, #alert-no-results {
     display: none;
     opacity: 0.9;
 }

@@ -56,15 +56,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
     let rankings = resRankings.data[subject]
     let rankS = Number(document.querySelector('#select-rank-s').value)
     let rankE = Number(document.querySelector('#select-rank-e').value)
-    if (rankS > rankE) {
-        alert(`
-        Invalid Input @ Rank
-        (second number must be larger or equal to first number)
-    `)
-    }
-
     let countrySelected = document.querySelector('#select-country').value
-
     let resCountriesInfo = await axios.get('../json/countries_info.json')
     let countryCodes = resCountriesInfo.data.country_code[0]
     let regions = resCountriesInfo.data.region[0]
@@ -75,14 +67,21 @@ document.querySelector('#btn-search').addEventListener('click', async function (
         }
     }
 
-    if (!countrySelected || countryListWithResults.includes(countrySelected)) {
-        document.querySelector('#container-search-by-uni').style.display = 'flex'
-        document.querySelector('#container-no-results').style.display = 'none'
-    } else {
+    if (rankS > rankE) {
         document.querySelector('#container-search-by-uni').style.display = 'none'
-        document.querySelector('#container-no-results').style.display = 'flex'
+        document.querySelector('#alert-invalid-rank').style.display = 'block'
+        document.querySelector('#alert-no-results').style.display = 'none'
+    } else if (countrySelected && !countryListWithResults.includes(countrySelected)) {
+        document.querySelector('#container-search-by-uni').style.display = 'none'
+        document.querySelector('#alert-invalid-rank').style.display = 'none'
+        document.querySelector('#alert-no-results').style.display = 'flex'
         document.querySelector('#country-with-no-results').innerHTML = countrySelected
+    } else {
+        document.querySelector('#container-search-by-uni').style.display = 'flex'
+        document.querySelector('#alert-invalid-rank').style.display = 'none'
+        document.querySelector('#alert-no-results').style.display = 'none'
     }
+
     document.querySelector('#unis').innerHTML = ''
     for (let eachUni = rankS - 1; eachUni < rankE; eachUni++) {
         let name = rankings[eachUni].Institution

@@ -123,7 +123,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
     let divScores = document.createElement('div')
     divScores.className = 'col-12 col-md-5'
     let divChart = document.createElement('div')
-    divChart.id = `chart-${subject}-${rank}`
+    divChart.id = `chart-radialbar-${subject}-${rank}`
     divScores.appendChild(divChart)
     divRow.appendChild(divScores)
 

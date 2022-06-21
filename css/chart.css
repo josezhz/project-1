@@ -13,7 +13,7 @@
 
 body {
     background-color: rgb(0, 0, 0);
-    background-image: url(../images/textures/subtle-grey.png);
+    background-image: url(../images/bgs/texture.png);
     flex-direction: column;
 }
 

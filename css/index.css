@@ -16,7 +16,8 @@ body {
 }
 
 a>img {
-    height: 100px;
+    width: 16vw;
+    max-width: 100px;
     background-color: rgba(255, 255, 255, 0);
 }
 a {
@@ -30,4 +31,13 @@ a:nth-child(1):hover {
 }
 a:nth-child(2):hover {
     background-color: rgba(111, 66, 193, 0.3);
+}
+@media screen and (max-width: 576px) {
+    a {
+        padding: 20px;
+        border: 5px solid rgba(0, 0, 0, 0.3);
+    }
+    #home-links {
+       padding-top: 100px;
+    }
 }

@@ -56,6 +56,8 @@ new ApexCharts(document.querySelector("#chart-radial-bar-subject-x"), options1).
 
 
 document.querySelector('#btn-search').addEventListener('click', async function () {
+  document.querySelector('#alert-invalid-rank').style.display = 'none'
+  document.querySelector('#alert-no-results').style.display = 'none'
   toggleNav()
   let chartResults = document.querySelector('#chart-results')
   chartResults.innerHTML = ''

@@ -1,14 +1,41 @@
-https://josezhz.github.io/project-1/
+# UNISEEK - Seek Your Destination
 
-## Welcome to GitHub Pages
+Access demo site [here](https://josezhz.github.io/project-1/)
 
-You can use the [editor on GitHub](https://github.com/josezhz/project-1/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Overview
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+UNISEEK is a web application that helps visualize the locations and ranking scores of the world's top 50 universities through interactive map and charts.
 
-### Markdown
+### Users' Goals
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Users of UNISEEK such as pre-university (pre-U) graduates aim to have a better visual understanding of the world's top universities in terms of locations, ranking scores and rankings by different subject areas.
+
+### Organization's Goals
+
+The goal of UNISEEK is to provide pre-U graduates who are still undecided about their destination for university education with a platform explore and make a more informed decision.
+
+---
+
+## UI/UX
+
+### User Stories & Acceptance Criteria
+
+User Stories | Acceptance Criteria
+--- | ---
+As a pre-U graduate who wants to pursue a degree in medicine in the United States, I would like to know what are the good universities for medicine in the United States and where they are located. | A map application that is able to show locations of top universities for medicine in the United States.
+As a pre-U graduate interested in studying natural sciences in university but still unsure of which universities are good for pursuing a degree in natural sciences, I would like to have a general overview of the world's top universities for natural sciences, and for each university, how it scores in terms of academic and employer reputation. | A world's top universities ranking table that allows me to specify the type of ranking by subject with charts showing each university's score by different indicators such as academic and employer repuation.
+
+### Color
+
+![Theme colors](images/theme_colors.png)
+
+Green and purple are the theme colors of this website.
+
+Green is the main color used in the map page. It represents hope and symbolizes pre-U graduates' hope for styding in a top university of their desired location and subject.
+
+Purple is the main color useed in the chart page. It represents wisdom and symbolizes universities as the place for intellectual 
+
+
 
 ```markdown
 Syntax highlighted code block

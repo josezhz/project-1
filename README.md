@@ -1,5 +1,7 @@
 # UNISEEK - Seek Your Destination
 
+![Logo](images/logo.png)
+
 Access demo site [here](https://josezhz.github.io/project-1/)
 
 ## Overview
@@ -33,7 +35,58 @@ Green and purple are the theme colors of this website.
 
 Green is the main color used in the map page. It represents hope and symbolizes pre-U graduates' hope for styding in a top university of their desired location and subject.
 
-Purple is the main color useed in the chart page. It represents wisdom and symbolizes universities as the place for intellectual 
+Purple is the main color useed in the chart page. It represents wisdom and symbolizes universities as the place for intellectual excellence.
+
+### Font
+
+_Acme_ is used for the this site as it is a simple but beautiful sans serif typeface font that is free to use.
+
+---
+
+## Features
+
+- Map
+    1. Markers showing locations of the world's top 50 universities
+    2. Popups showing information of each university, including rank, university name, country, subject
+    3. A bar chart in the popup showing an overall score and respective scores for academic, employer, citations and h-index.
+    4. Selection of subject that the ranking is based on
+    5. Filtering by rank
+    6. Filtering by country
+    7. Filtering by regions
+    8. Search by university name
+
+- Chart
+    1. A ranking table displaying the world's top 50 universities, including rank, university name, country
+    2. A radialbar chart showing an overall score and respective scores for academic, employer, citations and h-index.
+    3. Selection of subject that the ranking is based on
+    4. Filtering by rank
+    5. Filtering by country
+    6. *Comparison of two selected universities in synchronized charts (**PENDING**)
+    7. *A line chart showing the variation of the university's rank over the 5 few years (**PENDING DUE TO LACK OF DATA**)
+
+---
+
+## Technologies Used
+
+1. HTML
+    - for building up the website
+2. CSS
+    - for styling the website
+3. [Bootstrap 5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+    - for responsiveness
+4. [Google Fonts](https://fonts.google.com/)
+    - for font _Acme_
+5. [Flaticon](https://www.flaticon.com/)
+    - for icons and interface icons
+6. 
+5. Javascript
+    - for rendering map and charts
+6. [Leaflet](https://leafletjs.com/)
+    - for creating map
+7. [Apexcharts](https://apexcharts.com/)
+    - for creating charts
+8. [Gitpod](https://www.gitpod.io/)
+    - for coding
 
 
 

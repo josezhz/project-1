@@ -111,11 +111,12 @@ _Acme_ is used for the this site as it is a simple but beautiful sans serif type
 | 4 | Filtering by rank (map/chart) | 1.	Repeat the steps of Test 1. Instead of “1” to “50”, select “1” to “10” for [RANK] | Only the top 10 universities are shown. |
 | 5 | Filtering by country (map/chart) | 1.	Repeat the steps of Test 1. Instead of “All”, select “Singapore” for [COUNTRY] | Only universities in Singapore are shown. |
 | 6 | Search by university (map) | 1.	Repeat the steps of Test 1<br>2.	Enter or select “Harvard University” for [Search by university]<br>3.	Press the search button next to it | The map zooms in and moves to the location of Harvard University |
-| 7A | Validation for [RANK] (map/chart) | 1.	Go to the map/chart page<br>2.	Select “Arts & Humanities” for [SUBJECT]<br>3.	Select “10” to “1” for [RANK]<br>4.	Select “Argentina” for [COUNTRY] | An alert pops up, asking the user to enter a smaller number followed by a larger one. |
-| 7B | Validation for availability of results (map/chart) | 1.	Repeat the steps of Test 7A. Instead of “10” to “1”, select “1” to “10” for [RANK] | An alert pops up, saying “No results for Argentina”. |
-| 7C | Example if inputs are valid and results are available | 1.	Repeat the steps of Test 7B. Instead of “1” to “10”, select “1” to “50” for [RANK] | One result of “Universidad de Buenos Aires (UBA)” appears. |
-| 8A | Responsiveness (Mobile) | 1. Using a mobile phone, repeat the steps of Test 1 on the map page | The navbar automatically hides itself. |
-| 8B | Responsiveness (Desktop) | 1.	Using a desktop, repeat the steps of Test 1 on the map page | The navbar remains. |
+| 7 | Filtering by region (map) | 1.	Go the map page and repeat steps of Test 1<br>2.	In the layers control on the top-right corner, turn off the selection “Asia” | All the markers from Asia disappears |
+| 8A | Validation for [RANK] (map/chart) | 1.	Go to the map/chart page<br>2.	Select “Arts & Humanities” for [SUBJECT]<br>3.	Select “10” to “1” for [RANK]<br>4.	Select “Argentina” for [COUNTRY] | An alert pops up, asking the user to enter a smaller number followed by a larger one. |
+| 8B | Validation for availability of results (map/chart) | 1.	Repeat the steps of Test 7A. Instead of “10” to “1”, select “1” to “10” for [RANK] | An alert pops up, saying “No results for Argentina”. |
+| 8C | Example if inputs are valid and results are available | 1.	Repeat the steps of Test 7B. Instead of “1” to “10”, select “1” to “50” for [RANK] | One result of “Universidad de Buenos Aires (UBA)” appears. |
+| 9A | Responsiveness (Mobile) | 1. Using a mobile phone, repeat the steps of Test 1 on the map page | The navbar automatically hides itself. |
+| 9B | Responsiveness (Desktop) | 1.	Using a desktop, repeat the steps of Test 1 on the map page | The navbar remains. |
 
 ---
 

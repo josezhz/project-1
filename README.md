@@ -4,6 +4,8 @@
 
 Access demo site [here](https://josezhz.github.io/project-1/)
 
+---
+
 ## Overview
 
 UNISEEK is a web application that helps visualize the locations and ranking scores of the world's top 50 universities through interactive map and charts.
@@ -22,8 +24,8 @@ The goal of UNISEEK is to provide pre-U graduates who are still undecided about 
 
 ### User Stories & Acceptance Criteria
 
-User Stories | Acceptance Criteria
---- | ---
+| User Stories | Acceptance Criteria |
+| ------------ | ------------------- |
 As a pre-U graduate who wants to pursue a degree in medicine in the United States, I would like to know what are the good universities for medicine in the United States and where they are located. | A map application that is able to show locations of top universities for medicine in the United States.
 As a pre-U graduate interested in studying natural sciences in university but still unsure of which universities are good for pursuing a degree in natural sciences, I would like to have a general overview of the world's top universities for natural sciences, and for each university, how it scores in terms of academic and employer reputation. | A world's top universities ranking table that allows me to specify the type of ranking by subject with charts showing each university's score by different indicators such as academic and employer repuation.
 
@@ -101,6 +103,20 @@ _Acme_ is used for the this site as it is a simple but beautiful sans serif type
 
 ## Test Cases
 
+| Test No. | Test Description | Test Steps | Expected Result |
+|:--------:| ---------------- | ---------- | --------------- |
+| 1 | Search function (map/chart) | 1.	Go to the map/chart page<br>2.	Select “Overall” for [SUBJECT]<br>3.	Select “1” to “50” for [RANK]<br>4.	Select “All” for [COUNTRY]<br>5.	Press the [Search] button at the bottom-right corner of the navbar | 50 markers/results appear on/in the map/table. |
+| 2 | Popup (map) | 1.	Repeat the steps of Test 1 on the map page<br>2.	Click on one of the markers | A popup pops up above the marker, containing subject, rank, country, university name, and a bar chart showing overall, academic, employer, citations, and h-index scores of the university. |
+| 3 | Subject selection (map/chart) | 1.	Repeat the steps of Test 1. Instead of “Overall”, select “Natural Sciences” for [SUBJECT] | A different set of 50 markers/results appear. If click on a marker in map page, the popup will show “Natural Sciences” on the top. |
+| 4 | Filtering by rank (map/chart) | 1.	Repeat the steps of Test 1. Instead of “1” to “50”, select “1” to “10” for [RANK] | Only the top 10 universities are shown. |
+| 5 | Filtering by country (map/chart) | 1.	Repeat the steps of Test 1. Instead of “All”, select “Singapore” for [COUNTRY] | Only universities in Singapore are shown. |
+| 6 | Search by university (map) | 1.	Repeat the steps of Test 1<br>2.	Enter or select “Harvard University” for [Search by university]<br>3.	Press the search button next to it | The map zooms in and moves to the location of Harvard University |
+| 7A | Validation for [RANK] (map/chart) | 1.	Go to the map/chart page<br>2.	Select “Arts & Humanities” for [SUBJECT]<br>3.	Select “10” to “1” for [RANK]<br>4.	Select “Argentina” for [COUNTRY] | An alert pops up, asking the user to enter a smaller number followed by a larger one. |
+| 7B | Validation for availability of results (map/chart) | 1.	Repeat the steps of Test 7A. Instead of “10” to “1”, select “1” to “10” for [RANK] | An alert pops up, saying “No results for Argentina”. |
+| 7C | Example if inputs are valid and results are available | 1.	Repeat the steps of Test 7B. Instead of “1” to “10”, select “1” to “50” for [RANK] | One result of “Universidad de Buenos Aires (UBA)” appears. |
+| 8A | Responsiveness (Mobile) | 1. Using a mobile phone, repeat the steps of Test 1 on the map page | The navbar automatically hides itself. |
+| 8B | Responsiveness (Desktop) | 1.	Using a desktop, repeat the steps of Test 1 on the map page | The navbar remains. |
+
 ---
 
 ## Deployment
@@ -108,6 +124,8 @@ _Acme_ is used for the this site as it is a simple but beautiful sans serif type
 The website is hosted using [GitHub Pages](https://pages.github.com/).
 
 For detailed deployment steps, refer [here](https://pages.github.com/).
+
+---
 
 ## Credits & Acknowledgement
 

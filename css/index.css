@@ -2,7 +2,7 @@ body {
     height: 100vh;
     width: 100vw;
     padding-top: 26px;
-    background-image: url(../images/bgs/bg.jpg);
+    background-image: url(../images/bgs/bg.png);
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;

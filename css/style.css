@@ -157,3 +157,16 @@ nav {
     padding-left: 0;
     color: white;
 }
+
+
+.copyright {
+    z-index: 701;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: fit-content;
+    font-size: 9px;
+    padding: 0 4px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

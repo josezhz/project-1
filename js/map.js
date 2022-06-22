@@ -108,9 +108,9 @@ document.querySelector('#btn-search').addEventListener('click', async function (
         // generate marker
         let countryCode = countryCodes[country]
         let countryIconType = ""
-        if (rank == 1) { countryIconType = "-gold" }
-        if (rank == 2) { countryIconType = "-silver" }
-        if (rank == 3) { countryIconType = "-bronze" }
+        if (rank == 1) { countryIconType = "_gold" }
+        if (rank == 2) { countryIconType = "_silver" }
+        if (rank == 3) { countryIconType = "_bronze" }
         let iconSize = [50, 50]
         let iconAnchor = [25, 50]
         let popupAnchor = [0, -50]

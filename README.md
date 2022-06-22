@@ -1,6 +1,6 @@
 # UNISEEK - Seek Your Destination
 
-![Logo](images/logo.png)
+![Logo](images/logo_with_bg.png)
 
 Access demo site [here](https://josezhz.github.io/project-1/)
 
@@ -45,7 +45,7 @@ _Acme_ is used for the this site as it is a simple but beautiful sans serif type
 
 ## Features
 
-- Map
+- ### Map
     1. Markers showing locations of the world's top 50 universities
     2. Popups showing information of each university, including rank, university name, country, subject
     3. A bar chart in the popup showing an overall score and respective scores for academic, employer, citations and h-index.
@@ -55,7 +55,7 @@ _Acme_ is used for the this site as it is a simple but beautiful sans serif type
     7. Filtering by regions
     8. Search by university name
 
-- Chart
+- ### Chart
     1. A ranking table displaying the world's top 50 universities, including rank, university name, country
     2. A radialbar chart showing an overall score and respective scores for academic, employer, citations and h-index.
     3. Selection of subject that the ranking is based on
@@ -78,42 +78,49 @@ _Acme_ is used for the this site as it is a simple but beautiful sans serif type
     - for font _Acme_
 5. [Flaticon](https://www.flaticon.com/)
     - for icons and interface icons
-6. 
-5. Javascript
+6. [LOGO.com](https://logo.com/)
+    - for designing logo
+7. Javascript
     - for rendering map and charts
-6. [Leaflet](https://leafletjs.com/)
+8. [Axios](https://www.axios.com/)
+    - for fetching data from APIs and local JSON files
+9. [Country Flags API](https://countryflagsapi.com/)
+    - for generating country flags
+10. [Google Maps Platform Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview)
+    - for geographical coordinates of each university
+11. [Leaflet](https://leafletjs.com/)
     - for creating map
-7. [Apexcharts](https://apexcharts.com/)
+12. [Apexcharts](https://apexcharts.com/)
     - for creating charts
-8. [Gitpod](https://www.gitpod.io/)
+13. [Gitpod](https://www.gitpod.io/)
     - for coding
+14. [GitHub](https://github.com/)
+    - for repository and deployment
 
+---
 
+## Test Cases
 
-```markdown
-Syntax highlighted code block
+---
 
-# Header 1
-## Header 2
-### Header 3
+## Deployment
 
-- Bulleted
-- List
+The website is hosted using [GitHub Pages](https://pages.github.com/).
 
-1. Numbered
-2. List
+For detailed deployment steps, refer [here](https://pages.github.com/).
 
-**Bold** and _Italic_ and `Code` text
+## Credits & Acknowledgement
 
-[Link](url) and ![Image](src)
-```
+### Data
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- [QS World University Rankings 2021](https://www.topuniversities.com/university-rankings/world-university-rankings/2021)
+    - for rankings data
+- [Country Flags API](https://countryflagsapi.com/)
+    - for country flags
+- [Google Maps Platform Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview)
+    - for geographical coordinates data
 
-### Jekyll Themes
+### Icons & Logos
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/josezhz/project-1/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- [Flaticon](https://www.flaticon.com/)
+- [LOGO.com](https://logo.com/)

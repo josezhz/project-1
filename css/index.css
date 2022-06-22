@@ -41,15 +41,3 @@ a:nth-child(2):hover {
        padding-top: calc(30vh - 20vw);
     }
 }
-
-footer>div {
-    z-index: 701;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(255, 255, 255, 0.7);
-    width: fit-content;
-    font-size: xx-small;
-    padding: 0 4px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}

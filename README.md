@@ -2,7 +2,7 @@
 
 ![Logo](images/logo_with_bg.png)
 
-Access demo site [here](https://josezhz.github.io/project-1/)
+Access the home page [here](https://josezhz.github.io/project-1/)
 
 ---
 
@@ -35,7 +35,7 @@ As a pre-U graduate interested in studying natural sciences in university but st
 
 Green and purple are the theme colors of this website.
 
-Green is the main color used in the map page. It represents hope and symbolizes pre-U graduates' hope for styding in a top university of their desired location and subject.
+Green is the main color used in the map page. It represents hope and symbolizes pre-U graduates' hope for studying in a top university of their desired location and subject.
 
 Purple is the main color useed in the chart page. It represents wisdom and symbolizes universities as the place for intellectual excellence.
 

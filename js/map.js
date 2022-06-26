@@ -228,6 +228,9 @@ document.querySelector('#btn-search').addEventListener('click', async function (
             }
         }
     }
+    document.querySelector('#clear-search-by-uni').addEventListener('click', function () {
+        document.querySelector('#search-by-uni').value = ''
+    })
     document.querySelector('#btn-search-by-uni').addEventListener('click', function () {
         let uniSelected = document.querySelector('#search-by-uni').value
         for (eachMarker of markers) {

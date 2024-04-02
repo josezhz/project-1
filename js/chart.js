@@ -112,7 +112,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
     let divCountry = document.createElement('div')
     divCountry.className = 'col-4 col-md-2 chart-country'
     divCountry.innerHTML = `
-      <img class="chart-flag" src="https://countryflagsapi.com/png/${countryCode}">
+      <img class="chart-flag" src="https://flagsapi.com/${countryCode.toUpperCase()}/flat/64.png">
       ${country}
     `
     divRow.appendChild(divCountry)

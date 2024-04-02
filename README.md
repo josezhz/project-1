@@ -86,7 +86,7 @@ _Acme_ is used for the this site as it is a simple but beautiful sans serif type
     - for rendering map and charts
 8. [Axios](https://www.axios.com/)
     - for fetching data from APIs and local JSON files
-9. [Country Flags API](https://countryflagsapi.com/)
+9. [Country Flags API](https://flagsapi.com/)
     - for generating country flags
 10. [Google Maps Platform Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview)
     - for geographical coordinates of each university

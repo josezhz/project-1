@@ -131,7 +131,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
         markers.push(marker)
 
         // generate popup
-        let imgElementFlag = `<img src="https://countryflagsapi.com/png/${countryCode}" class="border rounded" height="25px"/>`
+        let imgElementFlag = `<img src="https://flagsapi.com/${countryCode.toUpperCase()}/flat/64.png" height="25px"/>`
         let imgElementSubject = `<img src="../images/subject_logos/${subject}.png" height="30px">`
         let subjectName = {
             overall: "OVERALL",

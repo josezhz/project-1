@@ -1,145 +1,80 @@
-# UNISEEK - Seek Your Destination
+# UNISEEK — Find your next chapter
 
-![Logo](images/logo_with_bg.png)
+An independent university explorer by Jose Zhang Haozhe. Browse locations and scores, build a shortlist, and compare universities from the bundled **QS 2021 dataset**.
 
-Access the home page [here](https://josezhz.github.io/project-1/)
+**[Explore UNISEEK](https://josezhz.github.io/project-1/)** · [Rankings](https://josezhz.github.io/project-1/html/chart.html) · [Map](https://josezhz.github.io/project-1/html/map.html)
 
----
+## What you can do
 
-## Overview
+- Explore 50 records in each of six categories: overall, arts and humanities, engineering and technology, life sciences and medicine, natural sciences, and social sciences and management.
+- Filter instantly by university name, subject, country or territory, region, and published rank; sort by rank, name, or selected score.
+- Move between rankings and map views without losing filters. The current filters are encoded in the URL for sharing or bookmarking.
+- Save universities to a shortlist in your browser. When local storage is unavailable, bookmarks still work for the current session.
+- Select two or three universities for a side-by-side comparison of all five recorded scores within one subject area.
+- Open a university's score breakdown, locate it on the map, and export filtered results as CSV.
+- Use responsive layouts, keyboard navigation, labeled form controls, a skip link, native dialogs, reduced motion, and descriptive loading, empty, and error states.
 
-UNISEEK is a web application that helps visualize the locations and ranking scores of the world's top 50 universities through interactive map and charts.
+## Data and limitations
 
-### Users' Goals
+This is a historical discovery project, **not a source of current university rankings**. The original files in `json/` are preserved. The app uses `qs_2021_with_latlng.json` and `countries_info.json`.
 
-Users of UNISEEK such as pre-university (pre-U) graduates aim to have a better visual understanding of the world's top universities in terms of locations, ranking scores and rankings by different subject areas.
+Each category contains 50 university records. Across the dataset, there are 24 countries and territories. Scores (`Score`, `Academic`, `Employer`, `Citations`, and `H`) are displayed as recorded on a 0–100 scale. The app does not recalculate the overall score or claim that scores from different subjects use the same methodology. Rank filters use the recorded rank, including ties, rather than the array position.
 
-### Organization's Goals
+Refer to [QS Top Universities](https://www.topuniversities.com/) for current rankings and methodology. University coordinates are the existing project data. Map tiles require an internet connection; filtering, score details, and comparisons use local data and continue to work when tiles are unavailable. Saved universities are stored on the current browser and device, without an account or cross-device synchronization.
 
-The goal of UNISEEK is to provide pre-U graduates who are still undecided about their destination for university education with a platform explore and make a more informed decision.
+## Run locally
 
----
+Requires Node.js 20 or later. There is no build step or production npm dependency.
 
-## UI/UX
+```sh
+git clone https://github.com/josezhz/project-1.git
+cd project-1
+npm start
+```
 
-### User Stories & Acceptance Criteria
+Open **http://127.0.0.1:8000**. Serve the files over HTTP; opening HTML directly with `file://` will not load ES modules and JSON reliably. Alternatively, use any static web server, such as `python3 -m http.server 8000`.
 
-| User Stories | Acceptance Criteria |
-| ------------ | ------------------- |
-As a pre-U graduate who wants to pursue a degree in medicine in the United States, I would like to know what are the good universities for medicine in the United States and where they are located. | A map application that is able to show locations of top universities for medicine in the United States.
-As a pre-U graduate interested in studying natural sciences in university but still unsure of which universities are good for pursuing a degree in natural sciences, I would like to have a general overview of the world's top universities for natural sciences, and for each university, how it scores in terms of academic and employer reputation. | A world's top universities ranking table that allows me to specify the type of ranking by subject with charts showing each university's score by different indicators such as academic and employer repuation.
+## Tests
 
-### Color
+```sh
+npm ci
+npm test
+npx playwright install chromium --only-shell
+npm run test:e2e
+```
 
-![Theme colors](images/theme_colors.png)
+The unit tests cover the real dataset, combined filters, tied ranks, numeric sorting, query-string validation, unavailable storage, and CSV escaping. Browser tests cover navigation, desktop and mobile layouts, source scores, dialog focus, bookmarks, comparisons, exports, failed data requests, and map behavior without basemap tiles.
 
-Green and purple are the theme colors of this website.
+On Linux, Playwright may also need `npx playwright install-deps chromium`. An existing compatible Chromium executable can be supplied through `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`.
 
-Green is the main color used in the map page. It represents hope and symbolizes pre-U graduates' hope for studying in a top university of their desired location and subject.
+## Project structure
 
-Purple is the main color useed in the chart page. It represents wisdom and symbolizes universities as the place for intellectual excellence.
+```text
+index.html                 Landing page and subject discovery
+html/chart.html            Rankings view
+html/map.html              Map view
+css/                       Shared design system and page styles
+js/app.js                  Shared explorer UI and interactions
+js/utilities.js            Data loading, filtering, formatting, and export
+js/map.js                  Leaflet map adapter and graceful fallback
+js/home.js                 Home-page icons
+json/                      Original 2021 datasets
+vendor/leaflet/             Pinned Leaflet 1.9.4 assets and license
+scripts/serve.mjs           Local static development server
+tests/                     Data and browser regression tests
+```
 
-### Font
-
-_Acme_ is used for the this site as it is a simple but beautiful sans serif typeface font that is free to use.
-
----
-
-## Features
-
-- ### Map
-    1. Markers showing locations of the world's top 50 universities
-    2. Popups showing information of each university, including rank, university name, country, subject
-    3. A bar chart in the popup showing an overall score and respective scores for academic, employer, citations and h-index.
-    4. Selection of subject that the ranking is based on
-    5. Filtering by rank
-    6. Filtering by country
-    7. Filtering by regions
-    8. Search by university name
-
-- ### Chart
-    1. A ranking table displaying the world's top 50 universities, including rank, university name, country
-    2. A radialbar chart showing an overall score and respective scores for academic, employer, citations and h-index.
-    3. Selection of subject that the ranking is based on
-    4. Filtering by rank
-    5. Filtering by country
-    6. *Comparison of two selected universities in synchronized charts (**PENDING**)
-    7. *A line chart showing the variation of the university's rank over the 5 few years (**PENDING DUE TO LACK OF DATA**)
-
----
-
-## Technologies Used
-
-1. HTML
-    - for building up the website
-2. CSS
-    - for styling the website
-3. [Bootstrap 5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
-    - for responsiveness
-4. [Google Fonts](https://fonts.google.com/)
-    - for font _Acme_
-5. [Flaticon](https://www.flaticon.com/)
-    - for icons and interface icons
-6. [LOGO.com](https://logo.com/)
-    - for designing logo
-7. Javascript
-    - for rendering map and charts
-8. [Axios](https://www.axios.com/)
-    - for fetching data from APIs and local JSON files
-9. [Country Flags API](https://flagsapi.com/)
-    - for generating country flags
-10. [Google Maps Platform Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview)
-    - for geographical coordinates of each university
-11. [Leaflet](https://leafletjs.com/)
-    - for creating map
-12. [Apexcharts](https://apexcharts.com/)
-    - for creating charts
-13. [Gitpod](https://www.gitpod.io/)
-    - for coding
-14. [GitHub](https://github.com/)
-    - for repository and deployment
-
----
-
-## Test Cases
-
-| Test No. | Test Description | Test Steps | Expected Result |
-|:--------:| ---------------- | ---------- | --------------- |
-| 1 | Search function (map/chart) | 1.	Go to the map/chart page<br>2.	Select “Overall” for [SUBJECT]<br>3.	Select “1” to “50” for [RANK]<br>4.	Select “All” for [COUNTRY]<br>5.	Press the [Search] button at the bottom-right corner of the navbar | 50 markers/results appear on/in the map/table. |
-| 2 | Popup (map) | 1.	Repeat the steps of Test 1 on the map page<br>2.	Click on one of the markers | A popup pops up above the marker, containing subject, rank, country, university name, and a bar chart showing overall, academic, employer, citations, and h-index scores of the university. |
-| 3 | Subject selection (map/chart) | 1.	Repeat the steps of Test 1. Instead of “Overall”, select “Natural Sciences” for [SUBJECT] | A different set of 50 markers/results appear. If click on a marker in map page, the popup will show “Natural Sciences” on the top. |
-| 4 | Filtering by rank (map/chart) | 1.	Repeat the steps of Test 1. Instead of “1” to “50”, select “1” to “10” for [RANK] | Only the top 10 universities are shown. |
-| 5 | Filtering by country (map/chart) | 1.	Repeat the steps of Test 1. Instead of “All”, select “Singapore” for [COUNTRY] | Only universities in Singapore are shown. |
-| 6 | Search by university (map) | 1.	Repeat the steps of Test 1<br>2.	Enter or select “Harvard University” for [Search by university]<br>3.	Press the search button next to it | The map zooms in and moves to the location of Harvard University |
-| 7 | Filtering by region (map) | 1.	Go the map page and repeat steps of Test 1<br>2.	In the layers control on the top-right corner, turn off the selection “Asia” | All the markers from Asia disappears |
-| 8A | Validation for [RANK] (map/chart) | 1.	Go to the map/chart page<br>2.	Select “Arts & Humanities” for [SUBJECT]<br>3.	Select “10” to “1” for [RANK]<br>4.	Select “Argentina” for [COUNTRY] | An alert pops up, asking the user to enter a smaller number followed by a larger one. |
-| 8B | Validation for availability of results (map/chart) | 1.	Repeat the steps of Test 7A. Instead of “10” to “1”, select “1” to “10” for [RANK] | An alert pops up, saying “No results for Argentina”. |
-| 8C | Example if inputs are valid and results are available | 1.	Repeat the steps of Test 7B. Instead of “1” to “10”, select “1” to “50” for [RANK] | One result of “Universidad de Buenos Aires (UBA)” appears. |
-| 9A | Responsiveness (Mobile) | 1. Using a mobile phone, repeat the steps of Test 1 on the map page | The navbar automatically hides itself. |
-| 9B | Responsiveness (Desktop) | 1.	Using a desktop, repeat the steps of Test 1 on the map page | The navbar remains. |
-
----
+The frontend uses semantic HTML, CSS, native JavaScript modules, `fetch`, and CSS score bars. Leaflet is vendored so the interface does not depend on third-party script CDNs, icon fonts, flag APIs, or a chart library. No API key is needed.
 
 ## Deployment
 
-The website is hosted using [GitHub Pages](https://pages.github.com/).
+The project remains a static site compatible with GitHub Pages, including its existing `/project-1/` subpath and `html/map.html` / `html/chart.html` routes. Publish the root of `main` using the repository's existing Pages configuration. No build command or environment variables are required.
 
-For detailed deployment steps, refer [here](https://pages.github.com/).
+## Credits
 
----
-
-## Credits & Acknowledgement
-
-### Data
-
-- [QS World University Rankings 2021](https://www.topuniversities.com/university-rankings/world-university-rankings/2021)
-    - for rankings data
-- [Country Flags API](https://countryflagsapi.com/)
-    - for country flags
-- [Google Maps Platform Geocoding API](https://developers.google.com/maps/documentation/geocoding/overview)
-    - for geographical coordinates data
-
-### Icons & Logos
-
-- [Flaticon](https://www.flaticon.com/)
-- [LOGO.com](https://logo.com/)
+- Original project and university data preparation: Jose Zhang Haozhe.
+- Ranking source: [QS World University Rankings 2021](https://www.topuniversities.com/university-rankings/world-university-rankings/2021).
+- Map engine: [Leaflet](https://leafletjs.com/), BSD 2-Clause license included in `vendor/leaflet/LICENSE`.
+- Map data and tiles: [OpenStreetMap contributors](https://www.openstreetmap.org/copyright); attribution is retained on the map.
+- Legacy project logos and image assets: [LOGO.com](https://logo.com/) and [Flaticon](https://www.flaticon.com/).
+- Original coordinate preparation used Google Maps geocoding. The application now reads stored coordinates and contains no geocoding credential.

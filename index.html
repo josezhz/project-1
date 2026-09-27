@@ -1,41 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
-    <title>UNISEEK</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find your next chapter with UNISEEK. Explore university locations, discover subject rankings, and compare scores from the QS 2021 dataset.">
+  <meta name="theme-color" content="#287453">
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>UNISEEK — Find your next chapter</title>
+  <script type="module" src="js/home.js"></script>
 </head>
-
-<body>
-    <main class="container d-flex flex-column">
-
-        <div class="d-flex justify-content-center">
-            <img src="images/logo.png" id="home-logo">
-        </div>
-        
-        <div class="mt-5 d-flex justify-content-around" id="home-links">
-            <a href="html/map.html">
-                <img src="images/ui_logos/map.png">
-            </a>
-            <a href="html/chart.html">
-                <img src="images/ui_logos/chart.png">
-            </a>
-        </div>
-
-    </main>
-    
-    <footer>
-        <div>&copy; 2022 Jose Zhang Haozhe</div>
-    </footer>
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<body class="home-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="UNISEEK home"><span class="brand-mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 3v5q6 5 12 0v-5m4-3v8"/></svg></span>uniseek<span class="brand-dot">.</span></a>
+    <nav class="home-nav" aria-label="Main navigation"><a href="html/chart.html">University rankings</a><a href="html/map.html">Explore map</a><a href="#about">About</a></nav>
+    <a class="button button-primary header-cta" href="html/chart.html">Start exploring <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> BIG POSSIBILITIES. YOUR NEXT CHAPTER.</p>
+        <h1>Find your place<br>in the <em>world.</em></h1>
+        <p class="hero-description">A world of universities. A future that’s yours.<br>Explore leading institutions, compare their strengths,<br class="desktop-break"> and discover where your curiosity could take you.</p>
+        <div class="hero-actions"><a class="button button-primary" href="html/chart.html">Explore universities <span aria-hidden="true">↗</span></a><a class="hero-map-link" href="html/map.html"><span data-icon="globe"></span> Take a world tour <span aria-hidden="true">→</span></a></div>
+        <div class="hero-footnote"><span class="little-line"></span> Built for the journey ahead. Powered by the 2021 dataset.</div>
+      </div>
+      <div class="hero-visual" aria-label="A preview of universities in the 2021 dataset">
+        <div class="globe-art" aria-hidden="true"><div class="globe-circle"><span class="meridian meridian-one"></span><span class="meridian meridian-two"></span><span class="equator"></span><span class="latitude latitude-one"></span><span class="latitude latitude-two"></span><span class="globe-dot dot-one"></span><span class="globe-dot dot-two"></span><span class="globe-dot dot-three"></span></div><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="visual-star star-one">✳</span><span class="visual-star star-two">✧</span></div>
+        <div class="floating-label"><span class="live-dot"></span> Your possibilities are worldwide</div>
+        <a class="preview-card preview-one" href="html/chart.html?q=Massachusetts"><span class="preview-rank">01</span><div><span class="university-avatar">MIT</span><p>Massachusetts Institute<br>of Technology</p><small>United States</small></div><span class="preview-score">96.3<small>overall score</small></span></a>
+        <a class="preview-card preview-two" href="html/chart.html?q=Harvard"><span class="university-avatar tone-1">H</span><div><p>Harvard University</p><small>United States · #2 in this dataset</small></div><span class="mini-arrow" aria-hidden="true">↗</span></a>
+        <a class="preview-card preview-three" href="html/chart.html?q=Stanford"><span class="university-avatar tone-2">S</span><div><p>Stanford University</p><small>United States · #3 in this dataset</small></div><span class="mini-arrow" aria-hidden="true">↗</span></a>
+        <span class="visual-caption">ONE WORLD. COUNTLESS DIRECTIONS.</span>
+      </div>
+    </section>
+    <section class="home-stats" aria-label="Dataset coverage"><div><strong>50</strong><span>universities per ranking</span></div><div><strong>6</strong><span>ways to explore your interests</span></div><div><strong>24</strong><span>countries & territories</span></div><div class="stats-message"><span data-icon="globe"></span><p>Your ambition has<br><strong>no borders.</strong></p></div></section>
+    <section class="subjects-section" id="subjects">
+      <div class="section-heading"><div><p class="eyebrow">FOLLOW YOUR CURIOSITY</p><h2>What’s your field of possibility?</h2></div><p>Start with what you love.<br>See where it can take you.</p></div>
+      <div class="subject-grid">
+        <a href="html/chart.html" class="subject-card"><span class="subject-icon" data-icon="cap"></span><span class="subject-number">01</span><h3>Overall rankings</h3><p>See the bigger picture.</p><span class="subject-link">Explore universities <span aria-hidden="true">↗</span></span></a>
+        <a href="html/chart.html?subject=arts_and_humanities" class="subject-card"><span class="subject-icon lilac" data-icon="book"></span><span class="subject-number">02</span><h3>Arts & Humanities</h3><p>Ideas that shape how we see the world.</p><span class="subject-link">Explore universities <span aria-hidden="true">↗</span></span></a>
+        <a href="html/chart.html?subject=engineering_and_technology" class="subject-card"><span class="subject-icon blue" data-icon="code"></span><span class="subject-number">03</span><h3>Engineering & Technology</h3><p>Build what comes next.</p><span class="subject-link">Explore universities <span aria-hidden="true">↗</span></span></a>
+        <a href="html/chart.html?subject=life_sciences_and_medicine" class="subject-card"><span class="subject-icon rose" data-icon="heart"></span><span class="subject-number">04</span><h3>Life Sciences & Medicine</h3><p>A healthier world starts with discovery.</p><span class="subject-link">Explore universities <span aria-hidden="true">↗</span></span></a>
+        <a href="html/chart.html?subject=natural_sciences" class="subject-card"><span class="subject-icon sand" data-icon="atom"></span><span class="subject-number">05</span><h3>Natural Sciences</h3><p>Ask questions. Find new frontiers.</p><span class="subject-link">Explore universities <span aria-hidden="true">↗</span></span></a>
+        <a href="html/chart.html?subject=social_sciences_and_management" class="subject-card"><span class="subject-icon lilac" data-icon="people"></span><span class="subject-number">06</span><h3>Social Sciences & Management</h3><p>Understand people. Make an impact.</p><span class="subject-link">Explore universities <span aria-hidden="true">↗</span></span></a>
+      </div>
+    </section>
+    <section class="about-section" id="about"><div><p class="eyebrow">A LITTLE CONTEXT FOR YOUR JOURNEY</p><h2>A starting point.<br>An open world.</h2></div><div><p>UNISEEK is an independent university discovery project by Jose Zhang Haozhe. It brings together locations and scores for 50 universities in each of six ranking categories, so you can explore, save, and compare your possibilities.</p><p class="historical-note"><strong>A snapshot, not today’s rankings.</strong> This project uses its original QS 2021 dataset. Scores are displayed as recorded and are best compared within a subject area. For current rankings and methodology, visit <a href="https://www.topuniversities.com/" target="_blank" rel="noopener noreferrer">QS Top Universities <span aria-hidden="true">↗</span></a>.</p></div></section>
+  </main>
+  <footer class="home-footer"><a class="brand" href="index.html">uniseek<span class="brand-dot">.</span></a><p>Made for curious minds. © 2022–2026 Jose Zhang Haozhe</p><a href="https://github.com/josezhz/project-1" target="_blank" rel="noopener noreferrer">View the project <span aria-hidden="true">↗</span></a></footer>
 </body>
-
 </html>

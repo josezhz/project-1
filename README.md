@@ -2,7 +2,7 @@
 
 An independent university explorer by Jose Zhang Haozhe. Browse locations and scores, build a shortlist, and compare universities from the bundled **QS 2021 dataset**.
 
-**[Explore UNISEEK](https://josezhz.github.io/project-1/)** · [Rankings](https://josezhz.github.io/project-1/html/chart.html) · [Map](https://josezhz.github.io/project-1/html/map.html)
+**[Explore UNISEEK](https://josezhz.github.io/uniseek/)** · [Rankings](https://josezhz.github.io/uniseek/html/chart.html) · [Map](https://josezhz.github.io/uniseek/html/map.html)
 
 ## What you can do
 
